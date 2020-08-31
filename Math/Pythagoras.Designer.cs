@@ -33,10 +33,15 @@
             this.label_c = new System.Windows.Forms.Label();
             this.label_b = new System.Windows.Forms.Label();
             this.label_a = new System.Windows.Forms.Label();
-            this.textBox_c = new System.Windows.Forms.TextBox();
-            this.textBox_b = new System.Windows.Forms.TextBox();
-            this.textBox_a = new System.Windows.Forms.TextBox();
+            this.clear_pythagoras = new System.Windows.Forms.Button();
+            this.numericUpDown_a = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown_b = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown_c = new System.Windows.Forms.NumericUpDown();
+            this.button_pythagoras = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_a)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_b)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_c)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox2
@@ -75,35 +80,78 @@
             this.label_a.TabIndex = 1;
             this.label_a.Text = "a = ";
             // 
-            // textBox_c
+            // clear_pythagoras
             // 
-            this.textBox_c.Location = new System.Drawing.Point(111, 144);
-            this.textBox_c.Name = "textBox_c";
-            this.textBox_c.Size = new System.Drawing.Size(90, 39);
-            this.textBox_c.TabIndex = 2;
+            this.clear_pythagoras.Location = new System.Drawing.Point(204, 265);
+            this.clear_pythagoras.Name = "clear_pythagoras";
+            this.clear_pythagoras.Size = new System.Drawing.Size(98, 48);
+            this.clear_pythagoras.TabIndex = 3;
+            this.clear_pythagoras.Text = "Slet";
+            this.clear_pythagoras.UseVisualStyleBackColor = true;
+            this.clear_pythagoras.Click += new System.EventHandler(this.clear_pythagoras_Click);
             // 
-            // textBox_b
+            // numericUpDown_a
             // 
-            this.textBox_b.Location = new System.Drawing.Point(216, 372);
-            this.textBox_b.Name = "textBox_b";
-            this.textBox_b.Size = new System.Drawing.Size(90, 39);
-            this.textBox_b.TabIndex = 2;
+            this.numericUpDown_a.DecimalPlaces = 3;
+            this.numericUpDown_a.Location = new System.Drawing.Point(413, 204);
+            this.numericUpDown_a.Maximum = new decimal(new int[] {
+            1215752192,
+            23,
+            0,
+            0});
+            this.numericUpDown_a.Name = "numericUpDown_a";
+            this.numericUpDown_a.Size = new System.Drawing.Size(93, 39);
+            this.numericUpDown_a.TabIndex = 0;
+            this.numericUpDown_a.ThousandsSeparator = true;
             // 
-            // textBox_a
+            // numericUpDown_b
             // 
-            this.textBox_a.Location = new System.Drawing.Point(413, 208);
-            this.textBox_a.Name = "textBox_a";
-            this.textBox_a.Size = new System.Drawing.Size(90, 39);
-            this.textBox_a.TabIndex = 2;
+            this.numericUpDown_b.DecimalPlaces = 3;
+            this.numericUpDown_b.Location = new System.Drawing.Point(210, 373);
+            this.numericUpDown_b.Maximum = new decimal(new int[] {
+            1215752192,
+            23,
+            0,
+            0});
+            this.numericUpDown_b.Name = "numericUpDown_b";
+            this.numericUpDown_b.Size = new System.Drawing.Size(93, 39);
+            this.numericUpDown_b.TabIndex = 1;
+            this.numericUpDown_b.ThousandsSeparator = true;
+            // 
+            // numericUpDown_c
+            // 
+            this.numericUpDown_c.DecimalPlaces = 3;
+            this.numericUpDown_c.Location = new System.Drawing.Point(106, 145);
+            this.numericUpDown_c.Maximum = new decimal(new int[] {
+            1215752192,
+            23,
+            0,
+            0});
+            this.numericUpDown_c.Name = "numericUpDown_c";
+            this.numericUpDown_c.Size = new System.Drawing.Size(93, 39);
+            this.numericUpDown_c.TabIndex = 2;
+            this.numericUpDown_c.ThousandsSeparator = true;
+            // 
+            // button_pythagoras
+            // 
+            this.button_pythagoras.Location = new System.Drawing.Point(204, 211);
+            this.button_pythagoras.Name = "button_pythagoras";
+            this.button_pythagoras.Size = new System.Drawing.Size(98, 48);
+            this.button_pythagoras.TabIndex = 3;
+            this.button_pythagoras.Text = "Beregn";
+            this.button_pythagoras.UseVisualStyleBackColor = true;
+            this.button_pythagoras.Click += new System.EventHandler(this.button_pythagoras_Click);
             // 
             // Pythagoras
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(524, 440);
-            this.Controls.Add(this.textBox_a);
-            this.Controls.Add(this.textBox_b);
-            this.Controls.Add(this.textBox_c);
+            this.ClientSize = new System.Drawing.Size(529, 440);
+            this.Controls.Add(this.button_pythagoras);
+            this.Controls.Add(this.numericUpDown_c);
+            this.Controls.Add(this.numericUpDown_b);
+            this.Controls.Add(this.numericUpDown_a);
+            this.Controls.Add(this.clear_pythagoras);
             this.Controls.Add(this.label_a);
             this.Controls.Add(this.label_b);
             this.Controls.Add(this.label_c);
@@ -113,6 +161,9 @@
             this.Name = "Pythagoras";
             this.Text = "Pythagoras";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_a)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_b)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_c)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -124,8 +175,10 @@
         private System.Windows.Forms.Label label_c;
         private System.Windows.Forms.Label label_b;
         private System.Windows.Forms.Label label_a;
-        private System.Windows.Forms.TextBox textBox_c;
-        private System.Windows.Forms.TextBox textBox_b;
-        private System.Windows.Forms.TextBox textBox_a;
+        private System.Windows.Forms.Button clear_pythagoras;
+        private System.Windows.Forms.NumericUpDown numericUpDown_a;
+        private System.Windows.Forms.NumericUpDown numericUpDown_c;
+        private System.Windows.Forms.NumericUpDown numericUpDown_b;
+        private System.Windows.Forms.Button button_pythagoras;
     }
 }

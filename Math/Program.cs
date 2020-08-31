@@ -17,7 +17,7 @@ namespace Math
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Pythagoras());
+            Application.Run(new MainMenu());
         }
     }
 }
