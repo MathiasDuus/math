@@ -23,7 +23,7 @@ namespace Math
             float A = Convert.ToSingle(numericUpDown_va.Value);
             float B = Convert.ToSingle(numericUpDown_vb.Value);
 
-            if ((a + b) == 0 || (a + c) == 0 || (c + b) == 0 && A!=0 || B!=0)
+            if (((a + b) == 0 || (a + c) == 0 || (c + b) == 0) && (A != 0 || B != 0) && ((a + b + c) != 0))
             {
                 FindVinkelOgSide(a, b, c, A, B);
             }
@@ -41,6 +41,10 @@ namespace Math
 
         public void TrigonometriRetvinkelTrekant(float a, float b, float c)
         {
+            //C# bruger radianer, derfor bliver vi nødt til at converte dem til grader og vice versa
+            //Til radian: (grader)*PI/180
+            //TIL grader: (radian)*180/PI
+
             if (a == 0)
             {
                 // Finder den manglende vinkel vha. Pythagoras
@@ -91,13 +95,111 @@ namespace Math
 
         public void FindVinkelOgSide(float a, float b, float c, float A, float B)
         {
+            //C# bruger radianer, derfor bliver vi nødt til at converte dem til grader og vice versa
+            //Til radian: (grader)*PI/180
+            //TIL grader: (radian)*180/PI
 
+            // kender c og B
+            if (a == 0 && b == 0 && A == 0)
+            {
+                // Finder A ved at minuse de kandte vikler med 180 (retvinklet trekant har én vinkel på 90) derfor 90 - ukendt
+                A = 90 - B;
 
+                // Finder siden a: Sin(A)=a/c <=> a = c*Sin(A)
+                a = c * MathF.Sin((A*MathF.PI/180));
 
+                // Finder b: Cos(A)=b/c <=> b = c*Cos(A)
+                b = c * MathF.Cos((A * MathF.PI / 180));
 
+                numericUpDown_va.Value = Convert.ToDecimal(MathF.Abs(A));
+                numericUpDown_a.Value = Convert.ToDecimal(MathF.Abs(a));
+                numericUpDown_b.Value = Convert.ToDecimal(MathF.Abs(b));
+            }
 
+            // kender c og A
+            if (a == 0 && b == 0 && B == 0)
+            {
+                // Finder B
+                B = 90 - A;
 
+                // Finder siden a: a = c*Sin(A)
+                a = c * MathF.Sin((A * MathF.PI / 180));
 
+                // Finder b: b = c*Cos(A)
+                b = c * MathF.Cos((A * MathF.PI / 180));
+
+                numericUpDown_vb.Value = Convert.ToDecimal(MathF.Abs(B));
+                numericUpDown_a.Value = Convert.ToDecimal(MathF.Abs(a));
+                numericUpDown_b.Value = Convert.ToDecimal(MathF.Abs(b));
+            }
+
+            // kender b og B
+            if (a == 0 && c == 0 && A == 0)
+            {
+                // Finder A
+                A = 90 - B;
+
+                // Finder a: a=b*Tan(A)
+                a = b * MathF.Tan((A * MathF.PI / 180));
+
+                // Finder c: a=b/Cos(A)
+                c = b / MathF.Cos((A * MathF.PI / 180));
+
+                numericUpDown_va.Value = Convert.ToDecimal(MathF.Abs(A));
+                numericUpDown_a.Value = Convert.ToDecimal(MathF.Abs(a));
+                numericUpDown_c.Value = Convert.ToDecimal(MathF.Abs(c));
+            }
+
+            //  kender b og A
+            if (a == 0 && c == 0 && B == 0)
+            {
+                // Finder B
+                B = 90 - A;
+
+                // Finder a: a=b*Tan(A)
+                a = b * MathF.Tan((A * MathF.PI / 180));
+
+                // Finder c: a=b/Cos(A)
+                c = b / MathF.Cos((A * MathF.PI / 180));
+
+                numericUpDown_vb.Value = Convert.ToDecimal(MathF.Abs(B));
+                numericUpDown_a.Value = Convert.ToDecimal(MathF.Abs(a));
+                numericUpDown_c.Value = Convert.ToDecimal(MathF.Abs(c));
+            }
+
+            // kender a og B
+            if (c == 0 && b == 0 && A == 0)
+            {
+                // Finder A
+                A = 90 - B;
+
+                // Finder b: 
+                b = a / MathF.Tan((A * MathF.PI / 180));
+
+                // Finder c: a=b/Cos(A)
+                c = a / MathF.Sin((A * MathF.PI / 180));
+
+                numericUpDown_va.Value = Convert.ToDecimal(MathF.Abs(A));
+                numericUpDown_b.Value = Convert.ToDecimal(MathF.Abs(b));
+                numericUpDown_c.Value = Convert.ToDecimal(MathF.Abs(c));
+            }
+
+            // kender a og A
+            if (c == 0 && b == 0 && B == 0)
+            {
+                // Finder B
+                B = 90 - A;
+
+                // Finder b: 
+                b = a / MathF.Tan((A * MathF.PI / 180));
+
+                // Finder c: a=b/Cos(A)
+                c = a / MathF.Sin((A * MathF.PI / 180));
+
+                numericUpDown_vb.Value = Convert.ToDecimal(MathF.Abs(B));
+                numericUpDown_b.Value = Convert.ToDecimal(MathF.Abs(b));
+                numericUpDown_c.Value = Convert.ToDecimal(MathF.Abs(c));
+            }
         }
 
 

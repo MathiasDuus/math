@@ -178,7 +178,6 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button_pythagoras;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.NumericUpDown numericUpDown_b;
         private System.Windows.Forms.NumericUpDown numericUpDown_a;
         private System.Windows.Forms.Button clear_pythagoras;

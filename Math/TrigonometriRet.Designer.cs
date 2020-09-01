@@ -54,7 +54,7 @@
             // clear_trigonometriRet
             // 
             this.clear_trigonometriRet.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.clear_trigonometriRet.Location = new System.Drawing.Point(276, 296);
+            this.clear_trigonometriRet.Location = new System.Drawing.Point(247, 270);
             this.clear_trigonometriRet.Name = "clear_trigonometriRet";
             this.clear_trigonometriRet.Size = new System.Drawing.Size(98, 48);
             this.clear_trigonometriRet.TabIndex = 3;
@@ -66,7 +66,7 @@
             // 
             this.numericUpDown_a.DecimalPlaces = 3;
             this.numericUpDown_a.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.numericUpDown_a.Location = new System.Drawing.Point(469, 222);
+            this.numericUpDown_a.Location = new System.Drawing.Point(440, 196);
             this.numericUpDown_a.Maximum = new decimal(new int[] {
             1215752192,
             23,
@@ -81,7 +81,7 @@
             // 
             this.numericUpDown_b.DecimalPlaces = 3;
             this.numericUpDown_b.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.numericUpDown_b.Location = new System.Drawing.Point(276, 399);
+            this.numericUpDown_b.Location = new System.Drawing.Point(247, 373);
             this.numericUpDown_b.Maximum = new decimal(new int[] {
             1215752192,
             23,
@@ -96,7 +96,7 @@
             // 
             this.numericUpDown_c.DecimalPlaces = 3;
             this.numericUpDown_c.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.numericUpDown_c.Location = new System.Drawing.Point(168, 192);
+            this.numericUpDown_c.Location = new System.Drawing.Point(139, 166);
             this.numericUpDown_c.Maximum = new decimal(new int[] {
             1215752192,
             23,
@@ -110,7 +110,7 @@
             // beregn
             // 
             this.beregn.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.beregn.Location = new System.Drawing.Point(276, 242);
+            this.beregn.Location = new System.Drawing.Point(247, 216);
             this.beregn.Name = "beregn";
             this.beregn.Size = new System.Drawing.Size(98, 48);
             this.beregn.TabIndex = 3;
@@ -122,7 +122,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(426, 224);
+            this.label1.Location = new System.Drawing.Point(397, 198);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(56, 32);
             this.label1.TabIndex = 1;
@@ -132,7 +132,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(230, 401);
+            this.label2.Location = new System.Drawing.Point(201, 375);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 32);
             this.label2.TabIndex = 1;
@@ -142,7 +142,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(126, 194);
+            this.label3.Location = new System.Drawing.Point(97, 168);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(55, 32);
             this.label3.TabIndex = 1;
@@ -151,7 +151,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(76, 46);
+            this.pictureBox1.Location = new System.Drawing.Point(47, 20);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(424, 414);
             this.pictureBox1.TabIndex = 0;
@@ -161,7 +161,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(42, 401);
+            this.label4.Location = new System.Drawing.Point(13, 375);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(52, 32);
             this.label4.TabIndex = 1;
@@ -171,7 +171,7 @@
             // 
             this.numericUpDown_va.DecimalPlaces = 2;
             this.numericUpDown_va.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.numericUpDown_va.Location = new System.Drawing.Point(88, 399);
+            this.numericUpDown_va.Location = new System.Drawing.Point(59, 373);
             this.numericUpDown_va.Maximum = new decimal(new int[] {
             1215752192,
             23,
@@ -187,7 +187,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(425, 388);
+            this.label5.Location = new System.Drawing.Point(396, 362);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(116, 32);
             this.label5.TabIndex = 1;
@@ -197,7 +197,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(390, 38);
+            this.label6.Location = new System.Drawing.Point(361, 12);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(58, 32);
             this.label6.TabIndex = 1;
@@ -207,7 +207,7 @@
             // 
             this.numericUpDown_vb.DecimalPlaces = 2;
             this.numericUpDown_vb.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.numericUpDown_vb.Location = new System.Drawing.Point(434, 36);
+            this.numericUpDown_vb.Location = new System.Drawing.Point(405, 10);
             this.numericUpDown_vb.Maximum = new decimal(new int[] {
             1215752192,
             23,
@@ -237,7 +237,7 @@
             this.Controls.Add(this.clear_trigonometriRet);
             this.Controls.Add(this.pictureBox1);
             this.Name = "TrigonometriRet";
-            this.Size = new System.Drawing.Size(578, 479);
+            this.Size = new System.Drawing.Size(540, 456);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_a)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_b)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_c)).EndInit();
@@ -264,7 +264,6 @@
         private System.Windows.Forms.NumericUpDown numericUpDown_va;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
         private System.Windows.Forms.NumericUpDown numericUpDown_vb;
     }
 }
