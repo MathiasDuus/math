@@ -18,20 +18,20 @@ namespace Math
 
             if (a == 0)
             {
-                numericUpDown_a.Value = svar(a, b, c);
+                numericUpDown_a.Value = PythagorasCalc(a, b, c);
             }
             else if (b == 0)
             {
-                numericUpDown_b.Value = svar(a, b, c);
+                numericUpDown_b.Value = PythagorasCalc(a, b, c);
             }
             else if (c == 0)
             {
-                numericUpDown_c.Value = svar(a, b, c);
+                numericUpDown_c.Value = PythagorasCalc(a, b, c);
             }
 
         }
 
-        public static decimal svar(float a, float b, float c)
+        public static decimal PythagorasCalc(float a, float b, float c)
         {
             float svar;
 
@@ -49,9 +49,7 @@ namespace Math
 
         private void clear_pythagoras_Click(object sender, EventArgs e)
         {
-            numericUpDown_a.Value = 0;
-            numericUpDown_b.Value = 0;
-            numericUpDown_c.Value = 0;
+            Clear.NumericUpDowns(this);
         }
     }
 }

@@ -10,17 +10,29 @@ namespace Math
 {
     public partial class MainMenu : Form
     {
+        public static Form1 f = new Form1();
+        public static Pythagoras p = new Pythagoras();
+        public static TrigonometriRet t = new TrigonometriRet();
+
         public MainMenu()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void GoToPythagoras_Click(object sender, EventArgs e)
         {
-            var p = new Pythagoras();
-            var f = new Form1();
             f.Show();
             f.Controls.Add(p);
+            f.Text = p.Name;
+            p.Show();
+        }
+
+        private void GoToTrigonometriRet_Click(object sender, EventArgs e)
+        {
+            f.Show();
+            f.Controls.Add(t);
+            f.Text = t.Name;
+            t.Show();
         }
     }
 }

@@ -13,14 +13,36 @@ namespace Math
         public Form1()
         {
             InitializeComponent();
-
-            var p = new Pythagoras();
-            string name = p.Name;
-            this.Text = name;
-            this.Update();
         }
 
+        private void back_button_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            switch (this.Text)
+            {
+                case "Pythagoras":
+                    MainMenu.p.Hide();
+                    break;
+
+                case "TrigonometriRet":
+                    MainMenu.t.Hide();
+                    break;
+
+                case "":
+
+                    break;
+
+                case "2":
+
+                    break;
+
+                case "3":
+
+                    break;
+            }
 
 
+        }
     }
 }

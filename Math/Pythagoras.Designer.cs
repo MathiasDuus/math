@@ -68,7 +68,7 @@
             // 
             this.numericUpDown_c.DecimalPlaces = 3;
             this.numericUpDown_c.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.numericUpDown_c.Location = new System.Drawing.Point(98, 129);
+            this.numericUpDown_c.Location = new System.Drawing.Point(92, 143);
             this.numericUpDown_c.Maximum = new decimal(new int[] {
             1215752192,
             23,
@@ -144,7 +144,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(56, 131);
+            this.label3.Location = new System.Drawing.Point(50, 145);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(55, 32);
             this.label3.TabIndex = 1;
