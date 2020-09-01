@@ -30,6 +30,7 @@
         {
             this.GoToPythagoras = new System.Windows.Forms.Button();
             this.GoToTrigonometriRet = new System.Windows.Forms.Button();
+            this.GoToTrigonometriVil = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // GoToPythagoras
@@ -52,11 +53,22 @@
             this.GoToTrigonometriRet.UseVisualStyleBackColor = true;
             this.GoToTrigonometriRet.Click += new System.EventHandler(this.GoToTrigonometriRet_Click);
             // 
+            // GoToTrigonometriVil
+            // 
+            this.GoToTrigonometriVil.Location = new System.Drawing.Point(448, 12);
+            this.GoToTrigonometriVil.Name = "GoToTrigonometriVil";
+            this.GoToTrigonometriVil.Size = new System.Drawing.Size(265, 48);
+            this.GoToTrigonometriVil.TabIndex = 2;
+            this.GoToTrigonometriVil.Text = "Trigonometri vilkårlig";
+            this.GoToTrigonometriVil.UseVisualStyleBackColor = true;
+            this.GoToTrigonometriVil.Click += new System.EventHandler(this.GoToTrigonometriVil_Click);
+            // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(962, 668);
+            this.Controls.Add(this.GoToTrigonometriVil);
             this.Controls.Add(this.GoToTrigonometriRet);
             this.Controls.Add(this.GoToPythagoras);
             this.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -71,5 +83,6 @@
 
         private System.Windows.Forms.Button GoToPythagoras;
         private System.Windows.Forms.Button GoToTrigonometriRet;
+        private System.Windows.Forms.Button GoToTrigonometriVil;
     }
 }

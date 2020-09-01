@@ -13,6 +13,7 @@ namespace Math
         public static Form1 f = new Form1();
         public static Pythagoras p = new Pythagoras();
         public static TrigonometriRet t = new TrigonometriRet();
+        public static TrigonometriVil tv = new TrigonometriVil();
 
         public MainMenu()
         {
@@ -33,6 +34,14 @@ namespace Math
             f.Controls.Add(t);
             f.Text = t.Name;
             t.Show();
+        }
+
+        private void GoToTrigonometriVil_Click(object sender, EventArgs e)
+        {
+            f.Show();
+            f.Controls.Add(tv);
+            f.Text = tv.Name;
+            tv.Show();
         }
     }
 }

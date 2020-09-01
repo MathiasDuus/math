@@ -23,7 +23,7 @@ namespace Math
             float A = Convert.ToSingle(numericUpDown_va.Value);
             float B = Convert.ToSingle(numericUpDown_vb.Value);
 
-            if (((a + b) == 0 || (a + c) == 0 || (c + b) == 0) && (A != 0 || B != 0) && ((a + b + c) != 0))
+            if ((a + b + c != 0) && (A != 0 || B != 0) && (A + B <= 90))
             {
                 FindVinkelOgSide(a, b, c, A, B);
             }
@@ -201,7 +201,5 @@ namespace Math
                 numericUpDown_c.Value = Convert.ToDecimal(MathF.Abs(c));
             }
         }
-
-
     }
 }
