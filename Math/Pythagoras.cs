@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace Math
 {
-    public partial class Pythagoras : Form
+    public partial class Pythagoras : UserControl
     {
         public Pythagoras()
         {
@@ -37,11 +37,11 @@ namespace Math
 
             if (c != 0)
             {
-                svar = MathF.Sqrt((c*c)-(b*b+a*a));
+                svar = MathF.Sqrt((c * c) - (b * b + a * a));
             }
             else
             {
-                svar = MathF.Sqrt(a*a+b*b);
+                svar = MathF.Sqrt(a * a + b * b);
             }
 
             return Convert.ToDecimal(svar);

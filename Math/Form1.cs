@@ -8,19 +8,19 @@ using System.Windows.Forms;
 
 namespace Math
 {
-    public partial class MainMenu : Form
+    public partial class Form1 : Form
     {
-        public MainMenu()
+        public Form1()
         {
             InitializeComponent();
+
+            var p = new Pythagoras();
+            string name = p.Name;
+            this.Text = name;
+            this.Update();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            var p = new Pythagoras();
-            var f = new Form1();
-            f.Show();
-            f.Controls.Add(p);
-        }
+
+
     }
 }
