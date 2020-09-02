@@ -125,7 +125,7 @@
             // Beregn_TrigonometriVil
             // 
             this.Beregn_TrigonometriVil.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Beregn_TrigonometriVil.Location = new System.Drawing.Point(217, 205);
+            this.Beregn_TrigonometriVil.Location = new System.Drawing.Point(210, 220);
             this.Beregn_TrigonometriVil.Name = "Beregn_TrigonometriVil";
             this.Beregn_TrigonometriVil.Size = new System.Drawing.Size(102, 47);
             this.Beregn_TrigonometriVil.TabIndex = 2;
@@ -136,18 +136,24 @@
             // clear_TrigonometriVil
             // 
             this.clear_TrigonometriVil.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.clear_TrigonometriVil.Location = new System.Drawing.Point(217, 258);
+            this.clear_TrigonometriVil.Location = new System.Drawing.Point(210, 273);
             this.clear_TrigonometriVil.Name = "clear_TrigonometriVil";
             this.clear_TrigonometriVil.Size = new System.Drawing.Size(102, 47);
             this.clear_TrigonometriVil.TabIndex = 2;
             this.clear_TrigonometriVil.Text = "Slet";
             this.clear_TrigonometriVil.UseVisualStyleBackColor = true;
+            this.clear_TrigonometriVil.Click += new System.EventHandler(this.clear_TrigonometriVil_Click);
             // 
             // numericUpDown_a
             // 
             this.numericUpDown_a.DecimalPlaces = 2;
             this.numericUpDown_a.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.numericUpDown_a.Location = new System.Drawing.Point(399, 156);
+            this.numericUpDown_a.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
             this.numericUpDown_a.Name = "numericUpDown_a";
             this.numericUpDown_a.Size = new System.Drawing.Size(89, 39);
             this.numericUpDown_a.TabIndex = 3;
@@ -157,6 +163,11 @@
             this.numericUpDown_b.DecimalPlaces = 2;
             this.numericUpDown_b.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.numericUpDown_b.Location = new System.Drawing.Point(91, 156);
+            this.numericUpDown_b.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
             this.numericUpDown_b.Name = "numericUpDown_b";
             this.numericUpDown_b.Size = new System.Drawing.Size(89, 39);
             this.numericUpDown_b.TabIndex = 3;
@@ -166,6 +177,11 @@
             this.numericUpDown_c.DecimalPlaces = 2;
             this.numericUpDown_c.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.numericUpDown_c.Location = new System.Drawing.Point(269, 417);
+            this.numericUpDown_c.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
             this.numericUpDown_c.Name = "numericUpDown_c";
             this.numericUpDown_c.Size = new System.Drawing.Size(89, 39);
             this.numericUpDown_c.TabIndex = 3;
@@ -175,6 +191,11 @@
             this.numericUpDown_va.DecimalPlaces = 2;
             this.numericUpDown_va.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.numericUpDown_va.Location = new System.Drawing.Point(44, 417);
+            this.numericUpDown_va.Maximum = new decimal(new int[] {
+            180,
+            0,
+            0,
+            0});
             this.numericUpDown_va.Name = "numericUpDown_va";
             this.numericUpDown_va.Size = new System.Drawing.Size(89, 39);
             this.numericUpDown_va.TabIndex = 3;
@@ -184,6 +205,11 @@
             this.numericUpDown_vb.DecimalPlaces = 2;
             this.numericUpDown_vb.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.numericUpDown_vb.Location = new System.Drawing.Point(494, 417);
+            this.numericUpDown_vb.Maximum = new decimal(new int[] {
+            180,
+            0,
+            0,
+            0});
             this.numericUpDown_vb.Name = "numericUpDown_vb";
             this.numericUpDown_vb.Size = new System.Drawing.Size(89, 39);
             this.numericUpDown_vb.TabIndex = 3;
@@ -193,6 +219,11 @@
             this.numericUpDown_vc.DecimalPlaces = 2;
             this.numericUpDown_vc.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.numericUpDown_vc.Location = new System.Drawing.Point(269, 8);
+            this.numericUpDown_vc.Maximum = new decimal(new int[] {
+            180,
+            0,
+            0,
+            0});
             this.numericUpDown_vc.Name = "numericUpDown_vc";
             this.numericUpDown_vc.Size = new System.Drawing.Size(89, 39);
             this.numericUpDown_vc.TabIndex = 3;

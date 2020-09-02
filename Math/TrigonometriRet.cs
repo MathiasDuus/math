@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Text;
 using System.Windows.Forms;
 
 namespace Math
@@ -31,7 +26,6 @@ namespace Math
             {
                 TrigonometriRetvinkelTrekant(a, b, c);
             }
-
         }
        
         private void clear_trigonometriRet_Click(object sender, EventArgs e)
@@ -41,9 +35,9 @@ namespace Math
 
         public void TrigonometriRetvinkelTrekant(float a, float b, float c)
         {
-            //C# bruger radianer, derfor bliver vi nødt til at converte dem til grader og vice versa
-            //Til radian: (grader)*PI/180
-            //TIL grader: (radian)*180/PI
+            // C# bruger radianer, derfor bliver vi nødt til at converte dem til grader og vice versa
+            // Til radian: (grader)*PI/180
+            // TIL grader: (radian)*180/PI
 
             if (a == 0)
             {
@@ -56,7 +50,7 @@ namespace Math
                 cosA = cosA * 180 / MathF.PI;
                 numericUpDown_va.Value = Convert.ToDecimal(cosA);
 
-                //Bruger vinkel summen til at finde den sidste vinkel
+                // Bruger vinkel summen til at finde den sidste vinkel
                 float sum = 90-cosA;
                 numericUpDown_vb.Value = Convert.ToDecimal(sum);
 
@@ -71,7 +65,7 @@ namespace Math
                 cosB = cosB * 180 / MathF.PI;
                 numericUpDown_vb.Value = Convert.ToDecimal(cosB);
 
-                //Bruger vinkel summen til at finde den sidste vinkel
+                // Bruger vinkel summen til at finde den sidste vinkel
                 float sum = 90 - cosB;
                 numericUpDown_va.Value = Convert.ToDecimal(sum);
 
@@ -86,7 +80,7 @@ namespace Math
                 tanA = tanA * 180 / MathF.PI;
                 numericUpDown_vb.Value = Convert.ToDecimal(tanA);
 
-                //Bruger vinkel summen til at finde den sidste vinkel
+                // Bruger vinkel summen til at finde den sidste vinkel
                 float sum = 90 - tanA;
                 numericUpDown_va.Value = Convert.ToDecimal(sum);
 
@@ -95,9 +89,9 @@ namespace Math
 
         public void FindVinkelOgSide(float a, float b, float c, float A, float B)
         {
-            //C# bruger radianer, derfor bliver vi nødt til at converte dem til grader og vice versa
-            //Til radian: (grader)*PI/180
-            //TIL grader: (radian)*180/PI
+            // C# bruger radianer, derfor bliver vi nødt til at converte dem til grader og vice versa
+            // Til radian: (grader)*PI/180
+            // TIL grader: (radian)*180/PI
 
             // kender c og B
             if (a == 0 && b == 0 && A == 0)
@@ -150,7 +144,7 @@ namespace Math
                 numericUpDown_c.Value = Convert.ToDecimal(MathF.Abs(c));
             }
 
-            //  kender b og A
+            // kender b og A
             if (a == 0 && c == 0 && B == 0)
             {
                 // Finder B

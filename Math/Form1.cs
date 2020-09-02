@@ -29,8 +29,8 @@ namespace Math
                     MainMenu.t.Hide();
                     break;
 
-                case "":
-
+                case "TrigonometriVil":
+                    MainMenu.tv.Hide();
                     break;
 
                 case "2":
