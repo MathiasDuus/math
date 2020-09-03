@@ -128,7 +128,7 @@
             this.Beregn_TrigonometriVil.Location = new System.Drawing.Point(210, 220);
             this.Beregn_TrigonometriVil.Name = "Beregn_TrigonometriVil";
             this.Beregn_TrigonometriVil.Size = new System.Drawing.Size(102, 47);
-            this.Beregn_TrigonometriVil.TabIndex = 2;
+            this.Beregn_TrigonometriVil.TabIndex = 6;
             this.Beregn_TrigonometriVil.Text = "Beregn";
             this.Beregn_TrigonometriVil.UseVisualStyleBackColor = true;
             this.Beregn_TrigonometriVil.Click += new System.EventHandler(this.Beregn_TrigonometriVil_Click);
@@ -139,7 +139,7 @@
             this.clear_TrigonometriVil.Location = new System.Drawing.Point(210, 273);
             this.clear_TrigonometriVil.Name = "clear_TrigonometriVil";
             this.clear_TrigonometriVil.Size = new System.Drawing.Size(102, 47);
-            this.clear_TrigonometriVil.TabIndex = 2;
+            this.clear_TrigonometriVil.TabIndex = 7;
             this.clear_TrigonometriVil.Text = "Slet";
             this.clear_TrigonometriVil.UseVisualStyleBackColor = true;
             this.clear_TrigonometriVil.Click += new System.EventHandler(this.clear_TrigonometriVil_Click);
@@ -156,7 +156,7 @@
             0});
             this.numericUpDown_a.Name = "numericUpDown_a";
             this.numericUpDown_a.Size = new System.Drawing.Size(89, 39);
-            this.numericUpDown_a.TabIndex = 3;
+            this.numericUpDown_a.TabIndex = 0;
             // 
             // numericUpDown_b
             // 
@@ -170,7 +170,7 @@
             0});
             this.numericUpDown_b.Name = "numericUpDown_b";
             this.numericUpDown_b.Size = new System.Drawing.Size(89, 39);
-            this.numericUpDown_b.TabIndex = 3;
+            this.numericUpDown_b.TabIndex = 1;
             // 
             // numericUpDown_c
             // 
@@ -184,7 +184,7 @@
             0});
             this.numericUpDown_c.Name = "numericUpDown_c";
             this.numericUpDown_c.Size = new System.Drawing.Size(89, 39);
-            this.numericUpDown_c.TabIndex = 3;
+            this.numericUpDown_c.TabIndex = 2;
             // 
             // numericUpDown_va
             // 
@@ -212,7 +212,7 @@
             0});
             this.numericUpDown_vb.Name = "numericUpDown_vb";
             this.numericUpDown_vb.Size = new System.Drawing.Size(89, 39);
-            this.numericUpDown_vb.TabIndex = 3;
+            this.numericUpDown_vb.TabIndex = 4;
             // 
             // numericUpDown_vc
             // 
@@ -226,7 +226,7 @@
             0});
             this.numericUpDown_vc.Name = "numericUpDown_vc";
             this.numericUpDown_vc.Size = new System.Drawing.Size(89, 39);
-            this.numericUpDown_vc.TabIndex = 3;
+            this.numericUpDown_vc.TabIndex = 5;
             // 
             // TrigonometriVil
             // 

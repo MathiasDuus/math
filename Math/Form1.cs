@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 
 namespace Math
@@ -22,19 +17,24 @@ namespace Math
             switch (this.Text)
             {
                 case "Pythagoras":
+                    Clear.NumericUpDowns(this);
                     MainMenu.p.Hide();
                     break;
 
                 case "TrigonometriRet":
+                    Clear.NumericUpDowns(this);
                     MainMenu.t.Hide();
                     break;
 
                 case "TrigonometriVil":
+                    Clear.NumericUpDowns(this);
                     MainMenu.tv.Hide();
                     break;
 
-                case "2":
-
+                case "Formler":
+                    Clear.NumericUpDowns(this);
+                    Clear.ClearTextBox(this);
+                    MainMenu.fo.Hide();
                     break;
 
                 case "3":

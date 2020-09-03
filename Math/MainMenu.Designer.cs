@@ -31,6 +31,7 @@
             this.GoToPythagoras = new System.Windows.Forms.Button();
             this.GoToTrigonometriRet = new System.Windows.Forms.Button();
             this.GoToTrigonometriVil = new System.Windows.Forms.Button();
+            this.Formler = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // GoToPythagoras
@@ -63,11 +64,22 @@
             this.GoToTrigonometriVil.UseVisualStyleBackColor = true;
             this.GoToTrigonometriVil.Click += new System.EventHandler(this.GoToTrigonometriVil_Click);
             // 
+            // Formler
+            // 
+            this.Formler.Location = new System.Drawing.Point(12, 66);
+            this.Formler.Name = "Formler";
+            this.Formler.Size = new System.Drawing.Size(159, 48);
+            this.Formler.TabIndex = 3;
+            this.Formler.Text = "Formler";
+            this.Formler.UseVisualStyleBackColor = true;
+            this.Formler.Click += new System.EventHandler(this.Formler_Click);
+            // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(962, 668);
+            this.Controls.Add(this.Formler);
             this.Controls.Add(this.GoToTrigonometriVil);
             this.Controls.Add(this.GoToTrigonometriRet);
             this.Controls.Add(this.GoToPythagoras);
@@ -84,5 +96,6 @@
         private System.Windows.Forms.Button GoToPythagoras;
         private System.Windows.Forms.Button GoToTrigonometriRet;
         private System.Windows.Forms.Button GoToTrigonometriVil;
+        private System.Windows.Forms.Button Formler;
     }
 }

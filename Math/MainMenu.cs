@@ -11,10 +11,11 @@ namespace Math
     public partial class MainMenu : Form
     {
         public static Form1 f = new Form1();
+        public static MainMenu mm = new MainMenu();
         public static Pythagoras p = new Pythagoras();
         public static TrigonometriRet t = new TrigonometriRet();
         public static TrigonometriVil tv = new TrigonometriVil();
-        public static MainMenu mm = new MainMenu();
+        public static Formler fo = new Formler();
 
         public MainMenu()
         {
@@ -51,6 +52,15 @@ namespace Math
             f.Controls.Add(tv);
             f.Text = tv.Name;
             tv.Show();
+        }
+
+        private void Formler_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            f.Show();
+            f.Controls.Add(fo);
+            f.Text = fo.Name;
+            fo.Show();
         }
     }
 }

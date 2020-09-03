@@ -33,5 +33,32 @@ namespace Math
                 }
             }
         }
+
+        //Clear texbox
+        public static void ClearTextBox(Control parent)
+        {
+            if (parent == null)
+            {
+                throw new ArgumentNullException("parent");
+            }
+
+            else
+            {
+                foreach (Control control in parent.Controls)
+                {
+                    TextBox tb = control as TextBox;
+
+                    if (tb != null)
+                    {
+                        tb.Text = "";
+                    }
+
+                    if (control.Controls.Count > 0)
+                    {
+                        ClearTextBox(control);
+                    }
+                }
+            }
+        }
     }
 }
