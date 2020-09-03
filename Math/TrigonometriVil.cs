@@ -14,7 +14,7 @@ namespace Math
         {
             InitializeComponent();
         }
-
+        
         private void Beregn_TrigonometriVil_Click(object sender, EventArgs e)
         {
             float a = Convert.ToSingle(numericUpDown_a.Value);

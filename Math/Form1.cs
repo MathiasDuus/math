@@ -18,7 +18,7 @@ namespace Math
         private void back_button_Click(object sender, EventArgs e)
         {
             this.Hide();
-
+            MainMenu.mm.Show();
             switch (this.Text)
             {
                 case "Pythagoras":

@@ -14,14 +14,21 @@ namespace Math
         public static Pythagoras p = new Pythagoras();
         public static TrigonometriRet t = new TrigonometriRet();
         public static TrigonometriVil tv = new TrigonometriVil();
+        public static MainMenu mm = new MainMenu();
 
         public MainMenu()
         {
             InitializeComponent();
         }
 
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
         private void GoToPythagoras_Click(object sender, EventArgs e)
         {
+            this.Hide();
             f.Show();
             f.Controls.Add(p);
             f.Text = p.Name;
@@ -30,6 +37,7 @@ namespace Math
 
         private void GoToTrigonometriRet_Click(object sender, EventArgs e)
         {
+            this.Hide();
             f.Show();
             f.Controls.Add(t);
             f.Text = t.Name;
@@ -38,6 +46,7 @@ namespace Math
 
         private void GoToTrigonometriVil_Click(object sender, EventArgs e)
         {
+            this.Hide();
             f.Show();
             f.Controls.Add(tv);
             f.Text = tv.Name;

@@ -7,10 +7,24 @@ namespace Math
 {
     class Calculate
     {
+        public static float a;
+        public static float b;
+        public static float c;
+        public static float A;
+        public static float B;
+        public static float C;
+        public static string overFlow = "Indtast gyldige værdier";
 
-        public static decimal[] TrigonometriVil(float a, float b, float c, float A, float B, float C)
+        public static decimal[] TrigonometriVil(float q, float w, float e, float r, float t, float y)
         {
             decimal[] svar = new decimal[6];
+
+            a = q;
+            b = w;
+            c = e;
+            A = r;
+            B = t;
+            C = y;
 
             // C# bruger radianer, derfor bliver vi nødt til at converte dem til grader og vice versa
             // Til radian: (grader)*PI/180
@@ -64,211 +78,356 @@ namespace Math
 
         public static decimal Side_a(float a, float b, float c, float A, float B, float C)
         {
-            // Hvis "A" mangler
-            if (A == 0)
+            try
             {
-                A = Convert.ToSingle(Vinkel_A(a, b, c, A, B, C));
-            }
+                // Hvis "b" mangler
+                if (b == 0)
+                {
+                    b = Convert.ToSingle(Side_b(a, b, c, A, B, C));
+                }
 
-            // Hvis "b" mangler
-            if (b == 0)
+                // Hvis "c" mangler
+                if (c == 0)
+                {
+                    c = Convert.ToSingle(Side_c(a, b, c, A, B, C));
+                }
+
+                // C# bruger radianer, derfor bliver vi nødt til at converte dem til grader og vice versa
+                // Til radian: (grader)*PI/180
+                // TIL grader: (radian)*180/PI
+
+                // Hvis "A" mangler
+                if (A == 0)
+                {
+                    if (B == 0 && C != 0)
+                    {
+                        // B = Sin^-1((Sin(C)*b)/c)
+                        B = (MathF.Sin(C) * b) / c;
+                        if (B < 0)
+                        {
+                            B = (MathF.Sin(C * MathF.PI / 180) * b) / c;
+                        }
+                        B = MathF.Asin(B) * 180 / MathF.PI;
+                    }
+                    if (C == 0 && B != 0)
+                    {
+                        // C = Sin^-1((Sin(B)*c)/b)
+                        C = (MathF.Sin(B) * c) / b;
+                        if (C < 0)
+                        {
+                            C = (MathF.Sin((B * MathF.PI) / 180) * c) / b;
+                        }
+                        C = MathF.Asin(C) * 180 / MathF.PI;
+                    }
+                    if (B != 0 && C != 0)
+                    {
+                        //Tjekker begge sinus resultater
+                        //Tjekker først B
+                        if (CheckSin(B, C))
+                        {
+                            A = 180 - (180 - B) - C;
+                        }
+                        //Tjekker C
+                        else if (CheckSin(C, B))
+                        {
+                            A = 180 - (180 - C) - B;
+                        }
+                        else
+                        {
+                            A = 180 - (B + C);
+                        }
+                    }
+                }
+
+
+                // Finder a vha. cosinus: a = sqrt(b^2+c^2-2*b*c*cos(A))
+
+                a = MathF.Sqrt((b * b + c * c) - 2 * b * c * (MathF.Cos(A * MathF.PI / 180)));
+
+                return Convert.ToDecimal(MathF.Abs(a));
+            }
+            catch (OverflowException)
             {
-                b = Convert.ToSingle(Side_b(a, b, c, A, B, C));
+                MessageBox.Show(overFlow);
+                return 0;
             }
-
-            // Hvis "c" mangler
-            if (c == 0)
-            {
-                c = Convert.ToSingle(Side_c(a, b, c, A, B, C));
-            }
-            
-            // Finder a vha. cosinus: a = sqrt(b^2+c^2-2*b*c*cos(A))
-
-            a = MathF.Sqrt((b * b + c * c) - 2 * b * c * (MathF.Cos(A * MathF.PI / 180)));
-            
-
-            return Convert.ToDecimal(MathF.Abs(a));
         }
 
         public static decimal Side_b(float a, float b, float c, float A, float B, float C)
         {
-            // Hvis "B" mangler
-            if (B == 0)
+            try
             {
-                B = Convert.ToSingle(Vinkel_B(a, b, c, A, B, C));
-            }
+                // Hvis "a" mangler
+                if (a == 0)
+                {
+                    a = Convert.ToSingle(Side_a(a, b, c, A, B, C));
+                }
 
-            // Hvis "a" mangler
-            if (a == 0)
+                // Hvis "c" mangler
+                if (c == 0)
+                {
+                    c = Convert.ToSingle(Side_c(a, b, c, A, B, C));
+                }
+
+                // Hvis "B" mangler
+                if (B == 0)
+                {
+                    if (A == 0 && C != 0)
+                    {
+                        // A = Sin^-1((Sin(C)*a)/c)
+                        A = (MathF.Sin(C) * a) / c;
+                        if (A < 0)
+                        {
+                            A = (MathF.Sin(C * MathF.PI / 180) * a) / c;
+                        }
+                        A = MathF.Asin(A) * 180 / MathF.PI;
+                    }
+                    if (C == 0 && A != 0)
+                    {
+                        // C = Sin^-1((Sin(A)*c)/a)
+                        C = (MathF.Sin(A) * c) / a;
+                        if (C < 0)
+                        {
+                            C = (MathF.Sin(A * MathF.PI / 180) * c) / a;
+                        }
+                        C = MathF.Asin(C) * 180 / MathF.PI;
+                    }
+                    //Tjekker A
+                    if (CheckSin(A, C))
+                    {
+                        B = 180 - (180 - A) - C;
+                    }
+                    //Tjekker C
+                    else if (CheckSin(C, A))
+                    {
+                        B = 180 - (180 - C) - A;
+                    }
+                    if (A != 0 && C != 0)
+                    {
+                        B = 180 - (A + C);
+                    }
+                }
+
+                // Finder b vha. cosinus: b = sqrt(a^2+c^2-2*a*c*cos(B))
+
+                b = MathF.Sqrt((a * a + c * c) - 2 * a * c * (MathF.Cos(B * MathF.PI / 180)));
+
+                return Convert.ToDecimal(MathF.Abs(b));
+            }
+            catch (OverflowException)
             {
-                a = Convert.ToSingle(Side_a(a, b, c, A, B, C));
+                MessageBox.Show(overFlow);
+                return 0;
             }
-
-            // Hvis "c" mangler
-            if (c == 0)
-            {
-                c = Convert.ToSingle(Side_c(a, b, c, A, B, C));
-            }
-
-            // Finder b vha. cosinus: b = sqrt(a^2+c^2-2*a*c*cos(B))
-
-            b = MathF.Sqrt((a * a + c * c) * a * c * (MathF.Cos(B * MathF.PI / 180)));
-
-            return Convert.ToDecimal(MathF.Abs(b));
         }
 
         public static decimal Side_c(float a, float b, float c, float A, float B, float C)
         {
-            // Hvis "B" mangler
-            if (C == 0)
+            try
             {
-                C = Convert.ToSingle(Vinkel_C(a, b, c, A, B, C));
-            }
+                // Hvis "a" mangler
+                if (a == 0)
+                {
+                    a = Convert.ToSingle(Side_a(a, b, c, A, B, C));
+                }
 
-            // Hvis "a" mangler
-            if (a == 0)
+                // Hvis "c" mangler
+                if (b == 0)
+                {
+                    b = Convert.ToSingle(Side_b(a, b, c, A, B, C));
+                }
+
+                // Hvis "C" mangler
+                if (C == 0)
+                {
+                    if (A == 0 && B != 0)
+                    {
+                        // A = Sin^-1((Sin(B)*a)/b)
+                        A = (MathF.Sin(B) * a) / b;
+                        if (A < 0)
+                        {
+                            A = (MathF.Sin(B * MathF.PI / 180) * a) / b;
+                        }
+                        A = MathF.Asin(A) * 180 / MathF.PI;
+                    }
+                    if (B == 0 && A != 0)
+                    {
+                        // C = Sin^-1((Sin(A)*b)/a)
+                        B = (MathF.Sin(A) * b) / a;
+                        if (B < 0)
+                        {
+                            B = (MathF.Sin(A * MathF.PI / 180) * b) / a;
+                        }
+                        B = MathF.Asin(B) * 180 / MathF.PI;
+                    }
+                    //Tjekker B
+                    if (CheckSin(B, A))
+                    {
+                        C = 180 - (180 - B) - A;
+                    }
+                    //Tjekker A
+                    else if (CheckSin(A, B))
+                    {
+                        C = 180 - (180 - A) - B;
+                    }
+                    if (A != 0 && B != 0)
+                    {
+                        C = 180 - (A + B);
+                    }
+                }
+
+                // Finder c vha. cosinus: c = sqrt(a^2+b^2-2*a*b*cos(C))
+
+                c = MathF.Sqrt((b * b + a * a) - 2 * b * a * (MathF.Cos(C * MathF.PI / 180)));
+
+                return Convert.ToDecimal(MathF.Abs(c));
+            }
+            catch (OverflowException)
             {
-                a = Convert.ToSingle(Side_a(a, b, c, A, B, C));
+                MessageBox.Show(overFlow);
+                return 0;
             }
-
-            // Hvis "c" mangler
-            if (b == 0)
-            {
-                b = Convert.ToSingle(Side_b(a, b, c, A, B, C));
-            }
-
-            // Finder c vha. cosinus: c = sqrt(a^2+b^2-2*a*b*cos(C))
-
-            c = MathF.Sqrt((b * b + a * a) * b * a * (MathF.Cos(C * MathF.PI / 180)));
-
-            return Convert.ToDecimal(MathF.Abs(c));
         }
 
         public static decimal Vinkel_A(float a, float b, float c, float A, float B, float C)
         {
-            // Hvis "a" mangler
-            if (a == 0)
+            try
             {
-                a = Convert.ToSingle(Side_a(a, b, c, A, B, C));
-            }
+                // Hvis "a" mangler
+                if (a == 0)
+                {
+                    a = Convert.ToSingle(Side_a(a, b, c, A, B, C));
+                }
 
-            // Hvis "b" mangler
-            if (b == 0)
+                // Hvis "b" mangler
+                if (b == 0)
+                {
+                    b = Convert.ToSingle(Side_b(a, b, c, A, B, C));
+                }
+
+                // Hvis "c" mangler
+                if (c == 0)
+                {
+                    c = Convert.ToSingle(Side_c(a, b, c, A, B, C));
+                }
+
+                if (B != 0 && C != 0)
+                {
+                    A = 180 - (C + B);
+                }
+                else
+                {
+                    // Finder A vha. cosinus: cos(A)=frac{b^2+c^2-a^2}{2*b*c}
+
+                    A = ((b * b + c * c) - (a * a)) / (2 * b * c);
+                    A = MathF.Acos(A) * 180 / MathF.PI;
+                }
+
+                return Convert.ToDecimal(MathF.Abs(A));
+            }
+            catch (OverflowException)
             {
-                b = Convert.ToSingle(Side_b(a, b, c, A, B, C));
+                MessageBox.Show(overFlow);
+                return 0;
             }
-
-            // Hvis "c" mangler
-            if (c == 0)
-            {
-                c = Convert.ToSingle(Side_c(a, b, c, A, B, C));
-            }
-
-            if (B != 0 && C != 0)
-            {
-                A = (C + B) - 180;
-            }
-            else
-            {
-                // Finder A vha. cosinus: cos(A)=frac{b^2+c^2-a^2}{2*b*c}
-
-                A = ((b * b + c * c) - (a * a)) / (2 * b * c);
-                A = MathF.Acos(A) * 180 / MathF.PI;
-            }
-
-            return Convert.ToDecimal(MathF.Abs(A));
         }
 
         public static decimal Vinkel_B(float a, float b, float c, float A, float B, float C)
         {
-            // Hvis enten "a" mangler vil jeg bruge Sinus-relationerne til at finde vinklen "B"
-            if (a == 0)
+            try
             {
-                a = Convert.ToSingle(Side_a(a, b, c, A, B, C));
-            }
-
-            // Hvis "c" mangler
-            if (c == 0)
-            {
-                c = Convert.ToSingle(Side_c(a, b, c, A, B, C));
-            }
-
-            // Hvis "b" mangler
-            if (b == 0)
-            {
-                if (A != 0)
+                // Hvis enten "a" mangler vil jeg bruge Sinus-relationerne til at finde vinklen "B"
+                if (a == 0)
                 {
-                    // B = Sin^-1((Sin(A)*b)/a)
-                    B = (MathF.Sin(A) * b) / a;
-                    B = MathF.Asin(B) * 180 / MathF.PI;
+                    a = Convert.ToSingle(Side_a(a, b, c, A, B, C));
+                }
+
+                // Hvis "c" mangler
+                if (c == 0)
+                {
+                    c = Convert.ToSingle(Side_c(a, b, c, A, B, C));
+                }
+
+                // Hvis "b" mangler
+                if (b == 0)
+                {
+                    b = Convert.ToSingle(Side_b(a, b, c, A, B, C));
+                }
+
+                if (A != 0 && C != 0)
+                {
+                    B = (C + A) - 180;
                 }
                 else
                 {
-                    B = (MathF.Sin(C) * b) / c;
-                    B = MathF.Asin(B) * 180 / MathF.PI;
+                    // Finder B vha. cosinus: cos(B)=frac{a^2+c^2-b^2}{2*a*c}
+
+                    B = ((a * a + c * c) - (b * b)) / (2 * a * c);
+                    B = MathF.Acos(B) * 180 / MathF.PI;
                 }
+
                 return Convert.ToDecimal(MathF.Abs(B));
             }
-
-            if (A != 0 && C != 0)
+            catch (OverflowException)
             {
-                B = (C + A) - 180;
+                MessageBox.Show(overFlow);
+                return 0;
             }
-            else
-            {
-                // Finder B vha. cosinus: cos(B)=frac{a^2+c^2-b^2}{2*a*c}
-
-                B = ((a * a + c * c) - (b * b)) / (2 * a * c);
-                B = MathF.Acos(B) * 180 / MathF.PI;
-            }
-
-            return Convert.ToDecimal(MathF.Abs(B));
         }
-        
+
         public static decimal Vinkel_C(float a, float b, float c, float A, float B, float C)
         {
-            // Hvis enten "a" mangler vil jeg bruge Sinus-relationerne til at finde vinklen "B"
-            if (a == 0)
+            try
             {
-                a = Convert.ToSingle(Side_a(a, b, c, A, B, C));
-            }
-
-            // Hvis "b" mangler
-            if (b == 0)
-            {
-                b = Convert.ToSingle(Side_b(a, b, c, A, B, C));
-            }
-
-            // Hvis "c" mangler
-            if (c == 0)
-            {
-                // Hvis "A" ikke er nul så brug den her ellers brug den sinus der bruger "B"
-                if (A != 0)
+                // Hvis enten "a" mangler vil jeg bruge Sinus-relationerne til at finde vinklen "B"
+                if (a == 0)
                 {
-                    C = (MathF.Sin(A) * c) / a;
-                    C = MathF.Asin(C) * 180 / MathF.PI;
+                    a = Convert.ToSingle(Side_a(a, b, c, A, B, C));
+                }
+
+                // Hvis "b" mangler
+                if (b == 0)
+                {
+                    b = Convert.ToSingle(Side_b(a, b, c, A, B, C));
+                }
+
+                // Hvis "c" mangler
+                if (c == 0)
+                {
+                    c = Convert.ToSingle(Side_c(a, b, c, A, B, C));
+                }
+
+                if (B != 0 && A != 0)
+                {
+                    C = (A + B) - 180;
                 }
                 else
                 {
-                    C = (MathF.Sin(B) * c) / b;
-                    C = MathF.Asin(C) * 180 / MathF.PI;
-                }
-                return Convert.ToDecimal(MathF.Abs(B));
-            }
+                    // Finder C vha. cosinus: cos(C)=frac{a^2+b^2-c^2}{2*a*b}
 
-            if (B != 0 && A != 0)
+                    C = ((a * a + b * b) - (c * c)) / (2 * a * b);
+                    C = MathF.Acos(C) * 180 / MathF.PI;
+                }
+
+                return Convert.ToDecimal(MathF.Abs(C));
+            }
+            catch (OverflowException)
             {
-                C = (A + B) - 180;
+                MessageBox.Show(overFlow);
+                return 0;
+            }
+        }
+
+        public static bool CheckSin(float q, float w)
+        {
+            if (180 - (180 - q) - w > 0)
+            {
+                return true;
             }
             else
             {
-                // Finder C vha. cosinus: cos(C)=frac{a^2+b^2-c^2}{2*a*b}
-
-                C = ((a * a + b * b) - (c * c)) / (2 * a * b);
-                C = MathF.Acos(B) * 180 / MathF.PI;
+                return false;
             }
-
-            return Convert.ToDecimal(MathF.Abs(C));
         }
     }
 }
