@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Windows.Forms;
 
 namespace Math
@@ -34,62 +32,61 @@ namespace Math
             // Skal bruge: b, c, A
             if (a == 0)
             {
-                svar[0] = Side_a(a, b, c, A, B, C);
+                svar[0] = Side_a();
             }
 
             // Hvis "b" mangler og de tre andre tal ikke er 0
             // Skal Bruge: a, c, B
             if (b == 0)
             {
-                svar[1] = Side_b(a, b, c, A, B, C); 
+                svar[1] = Side_b(); 
             }
 
             // Hvis "c" mangler og de tre andre tal ikke er 0
             // Skal bruge: a, b, C
             if (c == 0)
             {
-                svar[2] = Side_c(a, b, c, A, B, C);
+                svar[2] = Side_c();
             }
 
             // Hvis "A" mangler og vi har resten der skal bruges til formlen
             // Skal bruge a, b, c
             if (A == 0)
             {
-                svar[3] = Vinkel_A(a, b, c, A, B, C);
+                svar[3] = Vinkel_A();
             }
 
             // Hvis "B" mangler og vi har resten der skal bruges til formlen
             // Skal bruge a, b, c
             if (B == 0)
             {
-                svar[4] = Vinkel_B(a, b, c, A, B, C);
+                svar[4] = Vinkel_B();
             }
 
             // Hvis "C" mangler og vi har resten der skal bruges til formlen
             // Skal bruge a, b, c
             if (C == 0)
             {
-                svar[5] = Vinkel_C(a, b, c, A, B, C);
+                svar[5] = Vinkel_C();
             }
 
             return svar;
         }
 
-
-        public static decimal Side_a(float a, float b, float c, float A, float B, float C)
+        public static decimal Side_a()
         {
             try
             {
                 // Hvis "b" mangler
                 if (b == 0)
                 {
-                    b = Convert.ToSingle(Side_b(a, b, c, A, B, C));
+                    b = Convert.ToSingle(Side_b());
                 }
 
                 // Hvis "c" mangler
                 if (c == 0)
                 {
-                    c = Convert.ToSingle(Side_c(a, b, c, A, B, C));
+                    c = Convert.ToSingle(Side_c());
                 }
 
                 // C# bruger radianer, derfor bliver vi nødt til at converte dem til grader og vice versa
@@ -149,24 +146,24 @@ namespace Math
             catch (OverflowException)
             {
                 MessageBox.Show(overFlow);
-                return 0;
+                return 1;
             }
         }
 
-        public static decimal Side_b(float a, float b, float c, float A, float B, float C)
+        public static decimal Side_b()
         {
             try
             {
                 // Hvis "a" mangler
                 if (a == 0)
                 {
-                    a = Convert.ToSingle(Side_a(a, b, c, A, B, C));
+                    a = Convert.ToSingle(Side_a());
                 }
 
                 // Hvis "c" mangler
                 if (c == 0)
                 {
-                    c = Convert.ToSingle(Side_c(a, b, c, A, B, C));
+                    c = Convert.ToSingle(Side_c());
                 }
 
                 // Hvis "B" mangler
@@ -217,24 +214,24 @@ namespace Math
             catch (OverflowException)
             {
                 MessageBox.Show(overFlow);
-                return 0;
+                return 1;
             }
         }
 
-        public static decimal Side_c(float a, float b, float c, float A, float B, float C)
+        public static decimal Side_c()
         {
             try
             {
                 // Hvis "a" mangler
                 if (a == 0)
                 {
-                    a = Convert.ToSingle(Side_a(a, b, c, A, B, C));
+                    a = Convert.ToSingle(Side_a());
                 }
 
                 // Hvis "c" mangler
                 if (b == 0)
                 {
-                    b = Convert.ToSingle(Side_b(a, b, c, A, B, C));
+                    b = Convert.ToSingle(Side_b());
                 }
 
                 // Hvis "C" mangler
@@ -285,37 +282,37 @@ namespace Math
             catch (OverflowException)
             {
                 MessageBox.Show(overFlow);
-                return 0;
+                return 1;
             }
         }
 
-        public static decimal Vinkel_A(float a, float b, float c, float A, float B, float C)
+        public static decimal Vinkel_A()
         {
             try
             {
                 // Hvis "a" mangler
                 if (a == 0)
                 {
-                    a = Convert.ToSingle(Side_a(a, b, c, A, B, C));
+                    a = Convert.ToSingle(Side_a());
                 }
 
                 // Hvis "b" mangler
                 if (b == 0)
                 {
-                    b = Convert.ToSingle(Side_b(a, b, c, A, B, C));
+                    b = Convert.ToSingle(Side_b());
                 }
 
                 // Hvis "c" mangler
                 if (c == 0)
                 {
-                    c = Convert.ToSingle(Side_c(a, b, c, A, B, C));
+                    c = Convert.ToSingle(Side_c());
                 }
 
-                if (B != 0 && C != 0)
+                if (B != 0 && C != 0 && A == 0)
                 {
                     A = 180 - (C + B);
                 }
-                else
+                else if (A == 0)
                 {
                     // Finder A vha. cosinus: cos(A)=frac{b^2+c^2-a^2}{2*b*c}
 
@@ -328,37 +325,37 @@ namespace Math
             catch (OverflowException)
             {
                 MessageBox.Show(overFlow);
-                return 0;
+                return 1;
             }
         }
 
-        public static decimal Vinkel_B(float a, float b, float c, float A, float B, float C)
+        public static decimal Vinkel_B()
         {
             try
             {
                 // Hvis enten "a" mangler vil jeg bruge Sinus-relationerne til at finde vinklen "B"
                 if (a == 0)
                 {
-                    a = Convert.ToSingle(Side_a(a, b, c, A, B, C));
+                    a = Convert.ToSingle(Side_a());
                 }
 
                 // Hvis "c" mangler
                 if (c == 0)
                 {
-                    c = Convert.ToSingle(Side_c(a, b, c, A, B, C));
+                    c = Convert.ToSingle(Side_c());
                 }
 
                 // Hvis "b" mangler
                 if (b == 0)
                 {
-                    b = Convert.ToSingle(Side_b(a, b, c, A, B, C));
+                    b = Convert.ToSingle(Side_b());
                 }
 
-                if (A != 0 && C != 0)
+                if (A != 0 && C != 0 && B == 0)
                 {
                     B = (C + A) - 180;
                 }
-                else
+                else if (B == 0)
                 {
                     // Finder B vha. cosinus: cos(B)=frac{a^2+c^2-b^2}{2*a*c}
 
@@ -366,42 +363,43 @@ namespace Math
                     B = MathF.Acos(B) * 180 / MathF.PI;
                 }
 
+                Console.WriteLine("Vinkel B " + B);
                 return Convert.ToDecimal(MathF.Abs(B));
             }
             catch (OverflowException)
             {
                 MessageBox.Show(overFlow);
-                return 0;
+                return 1;
             }
         }
 
-        public static decimal Vinkel_C(float a, float b, float c, float A, float B, float C)
+        public static decimal Vinkel_C()
         {
             try
             {
                 // Hvis enten "a" mangler vil jeg bruge Sinus-relationerne til at finde vinklen "B"
                 if (a == 0)
                 {
-                    a = Convert.ToSingle(Side_a(a, b, c, A, B, C));
+                    a = Convert.ToSingle(Side_a());
                 }
 
                 // Hvis "b" mangler
                 if (b == 0)
                 {
-                    b = Convert.ToSingle(Side_b(a, b, c, A, B, C));
+                    b = Convert.ToSingle(Side_b());
                 }
 
                 // Hvis "c" mangler
                 if (c == 0)
                 {
-                    c = Convert.ToSingle(Side_c(a, b, c, A, B, C));
+                    c = Convert.ToSingle(Side_c());
                 }
 
-                if (B != 0 && A != 0)
+                if (B != 0 && A != 0 && C == 0)
                 {
                     C = (A + B) - 180;
                 }
-                else
+                else if (C == 0)
                 {
                     // Finder C vha. cosinus: cos(C)=frac{a^2+b^2-c^2}{2*a*b}
 
@@ -414,7 +412,7 @@ namespace Math
             catch (OverflowException)
             {
                 MessageBox.Show(overFlow);
-                return 0;
+                return 1;
             }
         }
 
