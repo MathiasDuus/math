@@ -1,6 +1,6 @@
 ﻿namespace Math
 {
-    partial class Formler
+    partial class Graf
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,15 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Formler));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Graf));
             this.Button_AndFindX = new System.Windows.Forms.Button();
             this.Button_AndFindD = new System.Windows.Forms.Button();
             this.Button_LinFinda = new System.Windows.Forms.Button();
             this.Button_LinFindb = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.numericUpDown_xa = new System.Windows.Forms.NumericUpDown();
@@ -141,46 +137,6 @@
             this.Button_LinFindb.Text = "Find b";
             this.Button_LinFindb.UseVisualStyleBackColor = true;
             this.Button_LinFindb.Click += new System.EventHandler(this.Button_LinFindb_Click);
-            // 
-            // button5
-            // 
-            this.button5.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button5.Location = new System.Drawing.Point(139, 709);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(120, 44);
-            this.button5.TabIndex = 0;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button6.Location = new System.Drawing.Point(265, 709);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(120, 44);
-            this.button6.TabIndex = 0;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button7.Location = new System.Drawing.Point(391, 709);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(120, 44);
-            this.button7.TabIndex = 0;
-            this.button7.Text = "button7";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            this.button8.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button8.Location = new System.Drawing.Point(517, 709);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(120, 44);
-            this.button8.TabIndex = 0;
-            this.button8.Text = "button8";
-            this.button8.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -560,6 +516,7 @@
             // 
             // textBox_LinFinda
             // 
+            this.textBox_LinFinda.Cursor = System.Windows.Forms.Cursors.Default;
             this.textBox_LinFinda.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox_LinFinda.Location = new System.Drawing.Point(223, 423);
             this.textBox_LinFinda.Name = "textBox_LinFinda";
@@ -569,6 +526,7 @@
             // 
             // textBox_AndFindX
             // 
+            this.textBox_AndFindX.Cursor = System.Windows.Forms.Cursors.Default;
             this.textBox_AndFindX.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox_AndFindX.Location = new System.Drawing.Point(223, 256);
             this.textBox_AndFindX.Name = "textBox_AndFindX";
@@ -578,6 +536,7 @@
             // 
             // textBox_AndFindD
             // 
+            this.textBox_AndFindD.Cursor = System.Windows.Forms.Cursors.Default;
             this.textBox_AndFindD.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox_AndFindD.Location = new System.Drawing.Point(223, 135);
             this.textBox_AndFindD.Name = "textBox_AndFindD";
@@ -606,11 +565,12 @@
             // 
             // textBox_LindFindb
             // 
+            this.textBox_LindFindb.Cursor = System.Windows.Forms.Cursors.Default;
             this.textBox_LindFindb.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox_LindFindb.Location = new System.Drawing.Point(222, 560);
             this.textBox_LindFindb.Name = "textBox_LindFindb";
             this.textBox_LindFindb.ReadOnly = true;
-            this.textBox_LindFindb.Size = new System.Drawing.Size(162, 39);
+            this.textBox_LindFindb.Size = new System.Drawing.Size(163, 39);
             this.textBox_LindFindb.TabIndex = 7;
             // 
             // numericUpDown_LinFindb_x
@@ -700,7 +660,7 @@
             this.numericUpDown_LinFindb_a.Size = new System.Drawing.Size(120, 39);
             this.numericUpDown_LinFindb_a.TabIndex = 3;
             // 
-            // Formler
+            // Graf
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -739,10 +699,6 @@
             this.Controls.Add(this.numericUpDown_xa);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
             this.Controls.Add(this.Button_LinFindb);
             this.Controls.Add(this.Button_LinFinda);
             this.Controls.Add(this.Button_AndFindD);
@@ -753,8 +709,9 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label15);
-            this.Name = "Formler";
-            this.Size = new System.Drawing.Size(1017, 753);
+            this.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Name = "Graf";
+            this.Size = new System.Drawing.Size(1017, 618);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_xa)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_xd)).EndInit();
@@ -784,10 +741,6 @@
         private System.Windows.Forms.Button Button_AndFindD;
         private System.Windows.Forms.Button Button_LinFinda;
         private System.Windows.Forms.Button Button_LinFindb;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.NumericUpDown numericUpDown_xa;

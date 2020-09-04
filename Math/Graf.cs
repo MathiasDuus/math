@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace Math
 {
-    public partial class Formler : UserControl
+    public partial class Graf : UserControl
     {
-        public Formler()
+        public Graf()
         {
             InitializeComponent();
         }
@@ -35,6 +35,10 @@ namespace Math
                 x = ((-b) - MathF.Sqrt(D)) / (2 * a);
                 // Tilføjer resultatet til den samme string som før
                 svar += ", " + x.ToString();
+
+                Size size = TextRenderer.MeasureText(svar, textBox_AndFindX.Font);
+                textBox_AndFindX.Width = size.Width;
+                textBox_AndFindX.Height = size.Height;
                 textBox_AndFindX.Text = svar;
             }
             catch (Exception)
@@ -58,6 +62,11 @@ namespace Math
                 // Tilføjer resultatet til en string.
                 svar = D.ToString();
 
+                //ændre størelsen på textboxen efter indholdet
+                Size size = TextRenderer.MeasureText(svar, textBox_AndFindD.Font);
+                textBox_AndFindD.Width = size.Width;
+                textBox_AndFindD.Height = size.Height;
+                //tilføjer svar til textboxen
                 textBox_AndFindD.Text = svar;
             }
             catch (Exception)
@@ -83,6 +92,11 @@ namespace Math
                 // Tilføjer resultatet til en string.
                 svar = a.ToString();
 
+                //ændre størelsen på textboxen efter indholdet
+                Size size = TextRenderer.MeasureText(svar, textBox_LinFinda.Font);
+                textBox_LinFinda.Width = size.Width;
+                textBox_LinFinda.Height = size.Height;
+                //tilføjer svar til textboxen
                 textBox_LinFinda.Text = svar;
             }
             catch (Exception)
@@ -107,6 +121,11 @@ namespace Math
                 // Tilføjer resultatet til en string.
                 svar = b.ToString();
 
+                //ændre størelsen på textboxen efter indholdet
+                Size size = TextRenderer.MeasureText(svar, textBox_LindFindb.Font);
+                textBox_LindFindb.Width = size.Width;
+                textBox_LindFindb.Height = size.Height;
+                //tilføjer svar til textboxen
                 textBox_LindFindb.Text = svar;
             }
             catch (Exception)

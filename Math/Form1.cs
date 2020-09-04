@@ -31,10 +31,10 @@ namespace Math
                     MainMenu.tv.Hide();
                     break;
 
-                case "Formler":
+                case "Graf":
                     Clear.NumericUpDowns(this);
                     Clear.ClearTextBox(this);
-                    MainMenu.fo.Hide();
+                    MainMenu.g.Hide();
                     break;
 
                 case "3":

@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 
 namespace Math
@@ -15,7 +10,7 @@ namespace Math
         public static Pythagoras p = new Pythagoras();
         public static TrigonometriRet t = new TrigonometriRet();
         public static TrigonometriVil tv = new TrigonometriVil();
-        public static Formler fo = new Formler();
+        public static Graf g = new Graf();
 
         public MainMenu()
         {
@@ -58,9 +53,9 @@ namespace Math
         {
             this.Hide();
             f.Show();
-            f.Controls.Add(fo);
-            f.Text = fo.Name;
-            fo.Show();
+            f.Controls.Add(g);
+            f.Text = g.Name;
+            g.Show();
         }
     }
 }
