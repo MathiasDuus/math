@@ -607,7 +607,7 @@
             // textBox_LindFindb
             // 
             this.textBox_LindFindb.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox_LindFindb.Location = new System.Drawing.Point(223, 560);
+            this.textBox_LindFindb.Location = new System.Drawing.Point(222, 560);
             this.textBox_LindFindb.Name = "textBox_LindFindb";
             this.textBox_LindFindb.ReadOnly = true;
             this.textBox_LindFindb.Size = new System.Drawing.Size(162, 39);
