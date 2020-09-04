@@ -89,8 +89,30 @@ namespace Math
             {
                 MessageBox.Show(ups);
             }
+        }
 
+        private void Button_LinFindb_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                float y1 = Convert.ToSingle(numericUpDown_LinFindb_y.Value);
+                float x1 = Convert.ToSingle(numericUpDown_LinFindb_x.Value);
+                float a = Convert.ToSingle(numericUpDown_LinFindb_a.Value);
+                float b;
+                string svar;
 
+                //a=(Y_1-Y_2)/(X_1-X_2 )
+                b = a*x1-y1;
+
+                // Tilføjer resultatet til en string.
+                svar = b.ToString();
+
+                textBox_LindFindb.Text = svar;
+            }
+            catch (Exception)
+            {
+                MessageBox.Show(ups);
+            }
         }
     }
 }
