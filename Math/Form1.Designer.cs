@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.back_button = new System.Windows.Forms.Button();
+            this.Slet = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // back_button
@@ -42,14 +43,26 @@
             this.back_button.UseVisualStyleBackColor = true;
             this.back_button.Click += new System.EventHandler(this.back_button_Click);
             // 
+            // Slet
+            // 
+            this.Slet.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Slet.Location = new System.Drawing.Point(0, 50);
+            this.Slet.Name = "Slet";
+            this.Slet.Size = new System.Drawing.Size(110, 44);
+            this.Slet.TabIndex = 1;
+            this.Slet.Text = "Slet";
+            this.Slet.UseVisualStyleBackColor = true;
+            this.Slet.Click += new System.EventHandler(this.Slet_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(165, 77);
+            this.ClientSize = new System.Drawing.Size(113, 99);
             this.ControlBox = false;
+            this.Controls.Add(this.Slet);
             this.Controls.Add(this.back_button);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Form1";
@@ -61,5 +74,6 @@
         #endregion
 
         private System.Windows.Forms.Button back_button;
+        private System.Windows.Forms.Button Slet;
     }
 }

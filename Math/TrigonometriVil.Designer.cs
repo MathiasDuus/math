@@ -37,7 +37,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.Beregn_TrigonometriVil = new System.Windows.Forms.Button();
-            this.clear_TrigonometriVil = new System.Windows.Forms.Button();
             this.numericUpDown_a = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown_b = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown_c = new System.Windows.Forms.NumericUpDown();
@@ -125,24 +124,13 @@
             // Beregn_TrigonometriVil
             // 
             this.Beregn_TrigonometriVil.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Beregn_TrigonometriVil.Location = new System.Drawing.Point(210, 220);
+            this.Beregn_TrigonometriVil.Location = new System.Drawing.Point(217, 260);
             this.Beregn_TrigonometriVil.Name = "Beregn_TrigonometriVil";
             this.Beregn_TrigonometriVil.Size = new System.Drawing.Size(102, 47);
             this.Beregn_TrigonometriVil.TabIndex = 6;
             this.Beregn_TrigonometriVil.Text = "Beregn";
             this.Beregn_TrigonometriVil.UseVisualStyleBackColor = true;
             this.Beregn_TrigonometriVil.Click += new System.EventHandler(this.Beregn_TrigonometriVil_Click);
-            // 
-            // clear_TrigonometriVil
-            // 
-            this.clear_TrigonometriVil.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.clear_TrigonometriVil.Location = new System.Drawing.Point(210, 273);
-            this.clear_TrigonometriVil.Name = "clear_TrigonometriVil";
-            this.clear_TrigonometriVil.Size = new System.Drawing.Size(102, 47);
-            this.clear_TrigonometriVil.TabIndex = 7;
-            this.clear_TrigonometriVil.Text = "Slet";
-            this.clear_TrigonometriVil.UseVisualStyleBackColor = true;
-            this.clear_TrigonometriVil.Click += new System.EventHandler(this.clear_TrigonometriVil_Click);
             // 
             // numericUpDown_a
             // 
@@ -238,7 +226,6 @@
             this.Controls.Add(this.numericUpDown_c);
             this.Controls.Add(this.numericUpDown_b);
             this.Controls.Add(this.numericUpDown_a);
-            this.Controls.Add(this.clear_TrigonometriVil);
             this.Controls.Add(this.Beregn_TrigonometriVil);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -271,7 +258,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button Beregn_TrigonometriVil;
-        private System.Windows.Forms.Button clear_TrigonometriVil;
         private System.Windows.Forms.NumericUpDown numericUpDown_a;
         private System.Windows.Forms.NumericUpDown numericUpDown2;
         private System.Windows.Forms.NumericUpDown numericUpDown_c;

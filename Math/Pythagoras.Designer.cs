@@ -34,7 +34,6 @@
             this.numericUpDown_c = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown_b = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown_a = new System.Windows.Forms.NumericUpDown();
-            this.clear_pythagoras = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -56,7 +55,7 @@
             // button_pythagoras
             // 
             this.button_pythagoras.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button_pythagoras.Location = new System.Drawing.Point(196, 195);
+            this.button_pythagoras.Location = new System.Drawing.Point(197, 233);
             this.button_pythagoras.Name = "button_pythagoras";
             this.button_pythagoras.Size = new System.Drawing.Size(98, 48);
             this.button_pythagoras.TabIndex = 3;
@@ -109,17 +108,6 @@
             this.numericUpDown_a.TabIndex = 0;
             this.numericUpDown_a.ThousandsSeparator = true;
             // 
-            // clear_pythagoras
-            // 
-            this.clear_pythagoras.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.clear_pythagoras.Location = new System.Drawing.Point(196, 249);
-            this.clear_pythagoras.Name = "clear_pythagoras";
-            this.clear_pythagoras.Size = new System.Drawing.Size(98, 48);
-            this.clear_pythagoras.TabIndex = 3;
-            this.clear_pythagoras.Text = "Slet";
-            this.clear_pythagoras.UseVisualStyleBackColor = true;
-            this.clear_pythagoras.Click += new System.EventHandler(this.clear_pythagoras_Click);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -154,7 +142,6 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.clear_pythagoras);
             this.Controls.Add(this.numericUpDown_a);
             this.Controls.Add(this.numericUpDown_b);
             this.Controls.Add(this.numericUpDown_c);
@@ -180,7 +167,6 @@
         private System.Windows.Forms.Button button_pythagoras;
         private System.Windows.Forms.NumericUpDown numericUpDown_b;
         private System.Windows.Forms.NumericUpDown numericUpDown_a;
-        private System.Windows.Forms.Button clear_pythagoras;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;

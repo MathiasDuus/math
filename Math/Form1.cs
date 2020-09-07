@@ -10,39 +10,47 @@ namespace Math
             InitializeComponent();
         }
 
-        private void back_button_Click(object sender, EventArgs e)
+        public void CloseUC(Control UC)
         {
+            Clear.NumericUpDowns(this);
+            Clear.ClearTextBox(this);
             this.Hide();
             MainMenu.mm.Show();
+            UC.Hide();
+        }
+
+        private void back_button_Click(object sender, EventArgs e)
+        {
             switch (this.Text)
             {
                 case "Pythagoras":
-                    Clear.NumericUpDowns(this);
-                    MainMenu.p.Hide();
+                    CloseUC(MainMenu.p);
                     break;
 
                 case "TrigonometriRet":
-                    Clear.NumericUpDowns(this);
-                    MainMenu.t.Hide();
+                    CloseUC(MainMenu.t);
                     break;
 
                 case "TrigonometriVil":
-                    Clear.NumericUpDowns(this);
-                    MainMenu.tv.Hide();
+                    CloseUC(MainMenu.tv);
                     break;
 
                 case "Graf":
-                    Clear.NumericUpDowns(this);
-                    Clear.ClearTextBox(this);
-                    MainMenu.g.Hide();
+                    CloseUC(MainMenu.g);
                     break;
 
-                case "3":
-
+                case "Cirkler":
+                    CloseUC(MainMenu.c);
                     break;
             }
 
 
+        }
+
+        private void Slet_Click(object sender, EventArgs e)
+        {
+            Clear.NumericUpDowns(this);
+            Clear.ClearTextBox(this);
         }
     }
 }

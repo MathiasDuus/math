@@ -23,7 +23,7 @@ namespace Math
 
                     if (nud != null)
                     {
-                        nud.Value = nud.Minimum;
+                        nud.Value = 0;
                     }
 
                     if (control.Controls.Count > 0)

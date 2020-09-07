@@ -97,7 +97,7 @@
             // Button_AndFindX
             // 
             this.Button_AndFindX.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Button_AndFindX.Location = new System.Drawing.Point(22, 206);
+            this.Button_AndFindX.Location = new System.Drawing.Point(22, 220);
             this.Button_AndFindX.Name = "Button_AndFindX";
             this.Button_AndFindX.Size = new System.Drawing.Size(120, 44);
             this.Button_AndFindX.TabIndex = 0;
@@ -108,7 +108,7 @@
             // Button_AndFindD
             // 
             this.Button_AndFindD.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Button_AndFindD.Location = new System.Drawing.Point(22, 88);
+            this.Button_AndFindD.Location = new System.Drawing.Point(22, 102);
             this.Button_AndFindD.Name = "Button_AndFindD";
             this.Button_AndFindD.Size = new System.Drawing.Size(120, 44);
             this.Button_AndFindD.TabIndex = 0;
@@ -119,7 +119,7 @@
             // Button_LinFinda
             // 
             this.Button_LinFinda.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Button_LinFinda.Location = new System.Drawing.Point(22, 366);
+            this.Button_LinFinda.Location = new System.Drawing.Point(22, 380);
             this.Button_LinFinda.Name = "Button_LinFinda";
             this.Button_LinFinda.Size = new System.Drawing.Size(120, 44);
             this.Button_LinFinda.TabIndex = 0;
@@ -130,7 +130,7 @@
             // Button_LinFindb
             // 
             this.Button_LinFindb.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Button_LinFindb.Location = new System.Drawing.Point(22, 505);
+            this.Button_LinFindb.Location = new System.Drawing.Point(22, 519);
             this.Button_LinFindb.Name = "Button_LinFindb";
             this.Button_LinFindb.Size = new System.Drawing.Size(120, 44);
             this.Button_LinFindb.TabIndex = 0;
@@ -142,7 +142,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(229, 28);
+            this.label1.Location = new System.Drawing.Point(229, 42);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(216, 32);
             this.label1.TabIndex = 1;
@@ -151,7 +151,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(148, 206);
+            this.pictureBox1.Location = new System.Drawing.Point(148, 220);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(133, 44);
             this.pictureBox1.TabIndex = 2;
@@ -161,7 +161,7 @@
             // 
             this.numericUpDown_xa.DecimalPlaces = 3;
             this.numericUpDown_xa.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.numericUpDown_xa.Location = new System.Drawing.Point(336, 210);
+            this.numericUpDown_xa.Location = new System.Drawing.Point(336, 224);
             this.numericUpDown_xa.Maximum = new decimal(new int[] {
             100000000,
             0,
@@ -180,7 +180,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(287, 212);
+            this.label2.Location = new System.Drawing.Point(287, 226);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(56, 32);
             this.label2.TabIndex = 4;
@@ -190,7 +190,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(637, 212);
+            this.label3.Location = new System.Drawing.Point(637, 226);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(61, 32);
             this.label3.TabIndex = 4;
@@ -200,7 +200,7 @@
             // 
             this.numericUpDown_xd.DecimalPlaces = 3;
             this.numericUpDown_xd.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.numericUpDown_xd.Location = new System.Drawing.Point(686, 210);
+            this.numericUpDown_xd.Location = new System.Drawing.Point(686, 224);
             this.numericUpDown_xd.Maximum = new decimal(new int[] {
             100000000,
             0,
@@ -219,7 +219,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(462, 212);
+            this.label4.Location = new System.Drawing.Point(462, 226);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(58, 32);
             this.label4.TabIndex = 4;
@@ -229,7 +229,7 @@
             // 
             this.numericUpDown_xb.DecimalPlaces = 3;
             this.numericUpDown_xb.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.numericUpDown_xb.Location = new System.Drawing.Point(511, 210);
+            this.numericUpDown_xb.Location = new System.Drawing.Point(511, 224);
             this.numericUpDown_xb.Maximum = new decimal(new int[] {
             100000000,
             0,
@@ -248,7 +248,7 @@
             // 
             this.Label_FindXSvar.AutoSize = true;
             this.Label_FindXSvar.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Label_FindXSvar.Location = new System.Drawing.Point(171, 259);
+            this.Label_FindXSvar.Location = new System.Drawing.Point(171, 273);
             this.Label_FindXSvar.Name = "Label_FindXSvar";
             this.Label_FindXSvar.Size = new System.Drawing.Size(58, 32);
             this.Label_FindXSvar.TabIndex = 5;
@@ -257,7 +257,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(440, 24);
+            this.pictureBox2.Location = new System.Drawing.Point(440, 38);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(238, 41);
             this.pictureBox2.TabIndex = 6;
@@ -266,7 +266,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(148, 88);
+            this.pictureBox3.Location = new System.Drawing.Point(148, 102);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(175, 44);
             this.pictureBox3.TabIndex = 2;
@@ -276,7 +276,7 @@
             // 
             this.Label_FindDSvar.AutoSize = true;
             this.Label_FindDSvar.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Label_FindDSvar.Location = new System.Drawing.Point(168, 138);
+            this.Label_FindDSvar.Location = new System.Drawing.Point(168, 152);
             this.Label_FindDSvar.Name = "Label_FindDSvar";
             this.Label_FindDSvar.Size = new System.Drawing.Size(61, 32);
             this.Label_FindDSvar.TabIndex = 5;
@@ -286,7 +286,7 @@
             // 
             this.numericUpDown_db.DecimalPlaces = 3;
             this.numericUpDown_db.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.numericUpDown_db.Location = new System.Drawing.Point(553, 92);
+            this.numericUpDown_db.Location = new System.Drawing.Point(553, 106);
             this.numericUpDown_db.Maximum = new decimal(new int[] {
             100000000,
             0,
@@ -305,7 +305,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(504, 94);
+            this.label5.Location = new System.Drawing.Point(504, 108);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(58, 32);
             this.label5.TabIndex = 4;
@@ -315,7 +315,7 @@
             // 
             this.numericUpDown_dc.DecimalPlaces = 3;
             this.numericUpDown_dc.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.numericUpDown_dc.Location = new System.Drawing.Point(728, 92);
+            this.numericUpDown_dc.Location = new System.Drawing.Point(728, 106);
             this.numericUpDown_dc.Maximum = new decimal(new int[] {
             100000000,
             0,
@@ -334,7 +334,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(679, 94);
+            this.label6.Location = new System.Drawing.Point(679, 108);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(55, 32);
             this.label6.TabIndex = 4;
@@ -344,7 +344,7 @@
             // 
             this.numericUpDown_da.DecimalPlaces = 3;
             this.numericUpDown_da.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.numericUpDown_da.Location = new System.Drawing.Point(378, 92);
+            this.numericUpDown_da.Location = new System.Drawing.Point(378, 106);
             this.numericUpDown_da.Maximum = new decimal(new int[] {
             100000000,
             0,
@@ -363,7 +363,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(329, 94);
+            this.label7.Location = new System.Drawing.Point(329, 108);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(56, 32);
             this.label7.TabIndex = 4;
@@ -373,16 +373,16 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(238, 329);
+            this.label8.Location = new System.Drawing.Point(238, 343);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(183, 32);
+            this.label8.Size = new System.Drawing.Size(285, 32);
             this.label8.TabIndex = 1;
-            this.label8.Text = "Lineær funktion";
+            this.label8.Text = "Lineær funktion   y=ax+b";
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(148, 366);
+            this.pictureBox4.Location = new System.Drawing.Point(148, 380);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(100, 44);
             this.pictureBox4.TabIndex = 2;
@@ -392,7 +392,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(254, 372);
+            this.label9.Location = new System.Drawing.Point(254, 386);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(69, 32);
             this.label9.TabIndex = 4;
@@ -402,7 +402,7 @@
             // 
             this.numericUpDown_y1.DecimalPlaces = 3;
             this.numericUpDown_y1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.numericUpDown_y1.Location = new System.Drawing.Point(313, 372);
+            this.numericUpDown_y1.Location = new System.Drawing.Point(313, 386);
             this.numericUpDown_y1.Maximum = new decimal(new int[] {
             100000000,
             0,
@@ -421,7 +421,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(439, 374);
+            this.label10.Location = new System.Drawing.Point(439, 388);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(69, 32);
             this.label10.TabIndex = 4;
@@ -431,7 +431,7 @@
             // 
             this.numericUpDown_y2.DecimalPlaces = 3;
             this.numericUpDown_y2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.numericUpDown_y2.Location = new System.Drawing.Point(498, 371);
+            this.numericUpDown_y2.Location = new System.Drawing.Point(498, 385);
             this.numericUpDown_y2.Maximum = new decimal(new int[] {
             100000000,
             0,
@@ -450,7 +450,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label11.Location = new System.Drawing.Point(630, 374);
+            this.label11.Location = new System.Drawing.Point(630, 388);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(68, 32);
             this.label11.TabIndex = 4;
@@ -460,7 +460,7 @@
             // 
             this.numericUpDown_x1.DecimalPlaces = 3;
             this.numericUpDown_x1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.numericUpDown_x1.Location = new System.Drawing.Point(686, 370);
+            this.numericUpDown_x1.Location = new System.Drawing.Point(686, 384);
             this.numericUpDown_x1.Maximum = new decimal(new int[] {
             100000000,
             0,
@@ -479,7 +479,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label12.Location = new System.Drawing.Point(815, 374);
+            this.label12.Location = new System.Drawing.Point(815, 388);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(68, 32);
             this.label12.TabIndex = 4;
@@ -489,7 +489,7 @@
             // 
             this.numericUpDown_x2.DecimalPlaces = 3;
             this.numericUpDown_x2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.numericUpDown_x2.Location = new System.Drawing.Point(876, 372);
+            this.numericUpDown_x2.Location = new System.Drawing.Point(876, 386);
             this.numericUpDown_x2.Maximum = new decimal(new int[] {
             100000000,
             0,
@@ -508,7 +508,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label13.Location = new System.Drawing.Point(168, 426);
+            this.label13.Location = new System.Drawing.Point(168, 440);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(56, 32);
             this.label13.TabIndex = 5;
@@ -518,7 +518,7 @@
             // 
             this.textBox_LinFinda.Cursor = System.Windows.Forms.Cursors.Default;
             this.textBox_LinFinda.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox_LinFinda.Location = new System.Drawing.Point(223, 423);
+            this.textBox_LinFinda.Location = new System.Drawing.Point(223, 437);
             this.textBox_LinFinda.Name = "textBox_LinFinda";
             this.textBox_LinFinda.ReadOnly = true;
             this.textBox_LinFinda.Size = new System.Drawing.Size(162, 39);
@@ -528,7 +528,7 @@
             // 
             this.textBox_AndFindX.Cursor = System.Windows.Forms.Cursors.Default;
             this.textBox_AndFindX.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox_AndFindX.Location = new System.Drawing.Point(223, 256);
+            this.textBox_AndFindX.Location = new System.Drawing.Point(223, 270);
             this.textBox_AndFindX.Name = "textBox_AndFindX";
             this.textBox_AndFindX.ReadOnly = true;
             this.textBox_AndFindX.Size = new System.Drawing.Size(162, 39);
@@ -538,7 +538,7 @@
             // 
             this.textBox_AndFindD.Cursor = System.Windows.Forms.Cursors.Default;
             this.textBox_AndFindD.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox_AndFindD.Location = new System.Drawing.Point(223, 135);
+            this.textBox_AndFindD.Location = new System.Drawing.Point(223, 149);
             this.textBox_AndFindD.Name = "textBox_AndFindD";
             this.textBox_AndFindD.ReadOnly = true;
             this.textBox_AndFindD.Size = new System.Drawing.Size(162, 39);
@@ -547,7 +547,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(148, 505);
+            this.pictureBox5.Location = new System.Drawing.Point(148, 519);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(175, 44);
             this.pictureBox5.TabIndex = 2;
@@ -557,7 +557,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label14.Location = new System.Drawing.Point(168, 563);
+            this.label14.Location = new System.Drawing.Point(168, 577);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(58, 32);
             this.label14.TabIndex = 5;
@@ -567,7 +567,7 @@
             // 
             this.textBox_LindFindb.Cursor = System.Windows.Forms.Cursors.Default;
             this.textBox_LindFindb.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox_LindFindb.Location = new System.Drawing.Point(222, 560);
+            this.textBox_LindFindb.Location = new System.Drawing.Point(222, 574);
             this.textBox_LindFindb.Name = "textBox_LindFindb";
             this.textBox_LindFindb.ReadOnly = true;
             this.textBox_LindFindb.Size = new System.Drawing.Size(163, 39);
@@ -577,7 +577,7 @@
             // 
             this.numericUpDown_LinFindb_x.DecimalPlaces = 3;
             this.numericUpDown_LinFindb_x.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.numericUpDown_LinFindb_x.Location = new System.Drawing.Point(583, 507);
+            this.numericUpDown_LinFindb_x.Location = new System.Drawing.Point(583, 521);
             this.numericUpDown_LinFindb_x.Maximum = new decimal(new int[] {
             100000000,
             0,
@@ -596,7 +596,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label15.Location = new System.Drawing.Point(527, 511);
+            this.label15.Location = new System.Drawing.Point(527, 525);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(61, 32);
             this.label15.TabIndex = 4;
@@ -606,7 +606,7 @@
             // 
             this.numericUpDown_LinFindb_y.DecimalPlaces = 3;
             this.numericUpDown_LinFindb_y.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.numericUpDown_LinFindb_y.Location = new System.Drawing.Point(392, 507);
+            this.numericUpDown_LinFindb_y.Location = new System.Drawing.Point(392, 521);
             this.numericUpDown_LinFindb_y.Maximum = new decimal(new int[] {
             100000000,
             0,
@@ -625,7 +625,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label16.Location = new System.Drawing.Point(336, 511);
+            this.label16.Location = new System.Drawing.Point(336, 525);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(69, 32);
             this.label16.TabIndex = 4;
@@ -635,7 +635,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label17.Location = new System.Drawing.Point(709, 511);
+            this.label17.Location = new System.Drawing.Point(709, 525);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(49, 32);
             this.label17.TabIndex = 4;
@@ -645,7 +645,7 @@
             // 
             this.numericUpDown_LinFindb_a.DecimalPlaces = 3;
             this.numericUpDown_LinFindb_a.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.numericUpDown_LinFindb_a.Location = new System.Drawing.Point(754, 509);
+            this.numericUpDown_LinFindb_a.Location = new System.Drawing.Point(754, 523);
             this.numericUpDown_LinFindb_a.Maximum = new decimal(new int[] {
             100000000,
             0,
@@ -711,7 +711,7 @@
             this.Controls.Add(this.label15);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Name = "Graf";
-            this.Size = new System.Drawing.Size(1017, 618);
+            this.Size = new System.Drawing.Size(1017, 635);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_xa)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_xd)).EndInit();

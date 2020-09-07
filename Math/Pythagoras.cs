@@ -47,9 +47,5 @@ namespace Math
             return Convert.ToDecimal(svar);
         }
 
-        private void clear_pythagoras_Click(object sender, EventArgs e)
-        {
-            Clear.NumericUpDowns(this);
-        }
     }
 }

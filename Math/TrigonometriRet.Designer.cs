@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TrigonometriRet));
-            this.clear_trigonometriRet = new System.Windows.Forms.Button();
             this.numericUpDown_a = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown_b = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown_c = new System.Windows.Forms.NumericUpDown();
@@ -50,17 +49,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_va)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_vb)).BeginInit();
             this.SuspendLayout();
-            // 
-            // clear_trigonometriRet
-            // 
-            this.clear_trigonometriRet.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.clear_trigonometriRet.Location = new System.Drawing.Point(247, 270);
-            this.clear_trigonometriRet.Name = "clear_trigonometriRet";
-            this.clear_trigonometriRet.Size = new System.Drawing.Size(98, 48);
-            this.clear_trigonometriRet.TabIndex = 3;
-            this.clear_trigonometriRet.Text = "Slet";
-            this.clear_trigonometriRet.UseVisualStyleBackColor = true;
-            this.clear_trigonometriRet.Click += new System.EventHandler(this.clear_trigonometriRet_Click);
             // 
             // numericUpDown_a
             // 
@@ -110,7 +98,7 @@
             // beregn
             // 
             this.beregn.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.beregn.Location = new System.Drawing.Point(247, 216);
+            this.beregn.Location = new System.Drawing.Point(247, 263);
             this.beregn.Name = "beregn";
             this.beregn.Size = new System.Drawing.Size(98, 48);
             this.beregn.TabIndex = 3;
@@ -234,7 +222,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.beregn);
-            this.Controls.Add(this.clear_trigonometriRet);
             this.Controls.Add(this.pictureBox1);
             this.Name = "TrigonometriRet";
             this.Size = new System.Drawing.Size(540, 456);
@@ -250,8 +237,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button clear_trigonometriRet;
         private System.Windows.Forms.NumericUpDown numericUpDown_a;
         private System.Windows.Forms.NumericUpDown numericUpDown_b;
         private System.Windows.Forms.NumericUpDown numericUpDown_c;

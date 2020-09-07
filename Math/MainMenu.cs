@@ -11,6 +11,7 @@ namespace Math
         public static TrigonometriRet t = new TrigonometriRet();
         public static TrigonometriVil tv = new TrigonometriVil();
         public static Graf g = new Graf();
+        public static Cirkler c = new Cirkler();
 
         public MainMenu()
         {
@@ -22,40 +23,39 @@ namespace Math
             Application.Exit();
         }
 
-        private void GoToPythagoras_Click(object sender, EventArgs e)
+        public void OpenUC(Control UC)
         {
             this.Hide();
             f.Show();
-            f.Controls.Add(p);
-            f.Text = p.Name;
-            p.Show();
+            f.Controls.Add(UC);
+            f.Text = UC.Name;
+            UC.Show();
+        }
+
+
+        private void GoToPythagoras_Click(object sender, EventArgs e)
+        {
+            OpenUC(p);
         }
 
         private void GoToTrigonometriRet_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            f.Show();
-            f.Controls.Add(t);
-            f.Text = t.Name;
-            t.Show();
+            OpenUC(t);
         }
 
         private void GoToTrigonometriVil_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            f.Show();
-            f.Controls.Add(tv);
-            f.Text = tv.Name;
-            tv.Show();
+            OpenUC(tv);
         }
 
         private void Formler_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            f.Show();
-            f.Controls.Add(g);
-            f.Text = g.Name;
-            g.Show();
+            OpenUC(g);
+        }
+
+        private void Cirkler_Click(object sender, EventArgs e)
+        {
+            OpenUC(c);
         }
     }
 }

@@ -27,11 +27,6 @@ namespace Math
                 TrigonometriRetvinkelTrekant(a, b, c);
             }
         }
-       
-        private void clear_trigonometriRet_Click(object sender, EventArgs e)
-        {
-            Clear.NumericUpDowns(this);
-        }
 
         public void TrigonometriRetvinkelTrekant(float a, float b, float c)
         {

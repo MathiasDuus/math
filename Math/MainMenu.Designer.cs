@@ -32,6 +32,7 @@
             this.GoToTrigonometriRet = new System.Windows.Forms.Button();
             this.GoToTrigonometriVil = new System.Windows.Forms.Button();
             this.Formler = new System.Windows.Forms.Button();
+            this.Cirkler = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // GoToPythagoras
@@ -70,15 +71,26 @@
             this.Formler.Name = "Formler";
             this.Formler.Size = new System.Drawing.Size(159, 48);
             this.Formler.TabIndex = 3;
-            this.Formler.Text = "Formler";
+            this.Formler.Text = "Graf";
             this.Formler.UseVisualStyleBackColor = true;
             this.Formler.Click += new System.EventHandler(this.Formler_Click);
+            // 
+            // Cirkler
+            // 
+            this.Cirkler.Location = new System.Drawing.Point(177, 66);
+            this.Cirkler.Name = "Cirkler";
+            this.Cirkler.Size = new System.Drawing.Size(159, 48);
+            this.Cirkler.TabIndex = 3;
+            this.Cirkler.Text = "Cirkler";
+            this.Cirkler.UseVisualStyleBackColor = true;
+            this.Cirkler.Click += new System.EventHandler(this.Cirkler_Click);
             // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(962, 668);
+            this.Controls.Add(this.Cirkler);
             this.Controls.Add(this.Formler);
             this.Controls.Add(this.GoToTrigonometriVil);
             this.Controls.Add(this.GoToTrigonometriRet);
@@ -97,5 +109,6 @@
         private System.Windows.Forms.Button GoToTrigonometriRet;
         private System.Windows.Forms.Button GoToTrigonometriVil;
         private System.Windows.Forms.Button Formler;
+        private System.Windows.Forms.Button Cirkler;
     }
 }
