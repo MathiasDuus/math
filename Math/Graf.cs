@@ -31,10 +31,13 @@ namespace Math
                 x = ((-b) + MathF.Sqrt(D)) / (2 * a);
                 // Tilføjer resultatet til en string.
                 svar = x.ToString();
-                //Denne gang med minus
-                x = ((-b) - MathF.Sqrt(D)) / (2 * a);
-                // Tilføjer resultatet til den samme string som før
-                svar += ", " + x.ToString();
+                if (D > 0)
+                {
+                    //Denne gang med minus
+                    x = ((-b) - MathF.Sqrt(D)) / (2 * a);
+                    // Tilføjer resultatet til den samme string som før
+                    svar += ", " + x.ToString();
+                }
 
                 Size size = TextRenderer.MeasureText(svar, textBox_AndFindX.Font);
                 textBox_AndFindX.Width = size.Width;

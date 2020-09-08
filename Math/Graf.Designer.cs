@@ -100,7 +100,7 @@
             this.Button_AndFindX.Location = new System.Drawing.Point(22, 220);
             this.Button_AndFindX.Name = "Button_AndFindX";
             this.Button_AndFindX.Size = new System.Drawing.Size(120, 44);
-            this.Button_AndFindX.TabIndex = 0;
+            this.Button_AndFindX.TabIndex = 8;
             this.Button_AndFindX.Text = "Find X";
             this.Button_AndFindX.UseVisualStyleBackColor = true;
             this.Button_AndFindX.Click += new System.EventHandler(this.Button_AndFindX_Click);
@@ -111,7 +111,7 @@
             this.Button_AndFindD.Location = new System.Drawing.Point(22, 102);
             this.Button_AndFindD.Name = "Button_AndFindD";
             this.Button_AndFindD.Size = new System.Drawing.Size(120, 44);
-            this.Button_AndFindD.TabIndex = 0;
+            this.Button_AndFindD.TabIndex = 3;
             this.Button_AndFindD.Text = "Find D";
             this.Button_AndFindD.UseVisualStyleBackColor = true;
             this.Button_AndFindD.Click += new System.EventHandler(this.Button_AndFindD_Click);
@@ -122,7 +122,7 @@
             this.Button_LinFinda.Location = new System.Drawing.Point(22, 380);
             this.Button_LinFinda.Name = "Button_LinFinda";
             this.Button_LinFinda.Size = new System.Drawing.Size(120, 44);
-            this.Button_LinFinda.TabIndex = 0;
+            this.Button_LinFinda.TabIndex = 14;
             this.Button_LinFinda.Text = "Find a";
             this.Button_LinFinda.UseVisualStyleBackColor = true;
             this.Button_LinFinda.Click += new System.EventHandler(this.Button_LinFinda_Click);
@@ -133,7 +133,7 @@
             this.Button_LinFindb.Location = new System.Drawing.Point(22, 519);
             this.Button_LinFindb.Name = "Button_LinFindb";
             this.Button_LinFindb.Size = new System.Drawing.Size(120, 44);
-            this.Button_LinFindb.TabIndex = 0;
+            this.Button_LinFindb.TabIndex = 19;
             this.Button_LinFindb.Text = "Find b";
             this.Button_LinFindb.UseVisualStyleBackColor = true;
             this.Button_LinFindb.Click += new System.EventHandler(this.Button_LinFindb_Click);
@@ -174,7 +174,7 @@
             -2147483648});
             this.numericUpDown_xa.Name = "numericUpDown_xa";
             this.numericUpDown_xa.Size = new System.Drawing.Size(120, 39);
-            this.numericUpDown_xa.TabIndex = 3;
+            this.numericUpDown_xa.TabIndex = 5;
             // 
             // label2
             // 
@@ -213,7 +213,7 @@
             -2147483648});
             this.numericUpDown_xd.Name = "numericUpDown_xd";
             this.numericUpDown_xd.Size = new System.Drawing.Size(120, 39);
-            this.numericUpDown_xd.TabIndex = 3;
+            this.numericUpDown_xd.TabIndex = 7;
             // 
             // label4
             // 
@@ -242,7 +242,7 @@
             -2147483648});
             this.numericUpDown_xb.Name = "numericUpDown_xb";
             this.numericUpDown_xb.Size = new System.Drawing.Size(120, 39);
-            this.numericUpDown_xb.TabIndex = 3;
+            this.numericUpDown_xb.TabIndex = 6;
             // 
             // Label_FindXSvar
             // 
@@ -299,7 +299,7 @@
             -2147483648});
             this.numericUpDown_db.Name = "numericUpDown_db";
             this.numericUpDown_db.Size = new System.Drawing.Size(120, 39);
-            this.numericUpDown_db.TabIndex = 3;
+            this.numericUpDown_db.TabIndex = 1;
             // 
             // label5
             // 
@@ -328,7 +328,7 @@
             -2147483648});
             this.numericUpDown_dc.Name = "numericUpDown_dc";
             this.numericUpDown_dc.Size = new System.Drawing.Size(120, 39);
-            this.numericUpDown_dc.TabIndex = 3;
+            this.numericUpDown_dc.TabIndex = 2;
             // 
             // label6
             // 
@@ -357,7 +357,7 @@
             -2147483648});
             this.numericUpDown_da.Name = "numericUpDown_da";
             this.numericUpDown_da.Size = new System.Drawing.Size(120, 39);
-            this.numericUpDown_da.TabIndex = 3;
+            this.numericUpDown_da.TabIndex = 0;
             // 
             // label7
             // 
@@ -415,7 +415,7 @@
             -2147483648});
             this.numericUpDown_y1.Name = "numericUpDown_y1";
             this.numericUpDown_y1.Size = new System.Drawing.Size(120, 39);
-            this.numericUpDown_y1.TabIndex = 3;
+            this.numericUpDown_y1.TabIndex = 10;
             // 
             // label10
             // 
@@ -444,7 +444,7 @@
             -2147483648});
             this.numericUpDown_y2.Name = "numericUpDown_y2";
             this.numericUpDown_y2.Size = new System.Drawing.Size(120, 39);
-            this.numericUpDown_y2.TabIndex = 3;
+            this.numericUpDown_y2.TabIndex = 11;
             // 
             // label11
             // 
@@ -473,7 +473,7 @@
             -2147483648});
             this.numericUpDown_x1.Name = "numericUpDown_x1";
             this.numericUpDown_x1.Size = new System.Drawing.Size(120, 39);
-            this.numericUpDown_x1.TabIndex = 3;
+            this.numericUpDown_x1.TabIndex = 12;
             // 
             // label12
             // 
@@ -502,7 +502,7 @@
             -2147483648});
             this.numericUpDown_x2.Name = "numericUpDown_x2";
             this.numericUpDown_x2.Size = new System.Drawing.Size(120, 39);
-            this.numericUpDown_x2.TabIndex = 3;
+            this.numericUpDown_x2.TabIndex = 13;
             // 
             // label13
             // 
@@ -522,7 +522,7 @@
             this.textBox_LinFinda.Name = "textBox_LinFinda";
             this.textBox_LinFinda.ReadOnly = true;
             this.textBox_LinFinda.Size = new System.Drawing.Size(162, 39);
-            this.textBox_LinFinda.TabIndex = 7;
+            this.textBox_LinFinda.TabIndex = 15;
             // 
             // textBox_AndFindX
             // 
@@ -532,7 +532,7 @@
             this.textBox_AndFindX.Name = "textBox_AndFindX";
             this.textBox_AndFindX.ReadOnly = true;
             this.textBox_AndFindX.Size = new System.Drawing.Size(162, 39);
-            this.textBox_AndFindX.TabIndex = 7;
+            this.textBox_AndFindX.TabIndex = 9;
             // 
             // textBox_AndFindD
             // 
@@ -542,7 +542,7 @@
             this.textBox_AndFindD.Name = "textBox_AndFindD";
             this.textBox_AndFindD.ReadOnly = true;
             this.textBox_AndFindD.Size = new System.Drawing.Size(162, 39);
-            this.textBox_AndFindD.TabIndex = 7;
+            this.textBox_AndFindD.TabIndex = 4;
             // 
             // pictureBox5
             // 
@@ -571,7 +571,7 @@
             this.textBox_LindFindb.Name = "textBox_LindFindb";
             this.textBox_LindFindb.ReadOnly = true;
             this.textBox_LindFindb.Size = new System.Drawing.Size(163, 39);
-            this.textBox_LindFindb.TabIndex = 7;
+            this.textBox_LindFindb.TabIndex = 20;
             // 
             // numericUpDown_LinFindb_x
             // 
@@ -590,7 +590,7 @@
             -2147483648});
             this.numericUpDown_LinFindb_x.Name = "numericUpDown_LinFindb_x";
             this.numericUpDown_LinFindb_x.Size = new System.Drawing.Size(120, 39);
-            this.numericUpDown_LinFindb_x.TabIndex = 3;
+            this.numericUpDown_LinFindb_x.TabIndex = 17;
             // 
             // label15
             // 
@@ -619,7 +619,7 @@
             -2147483648});
             this.numericUpDown_LinFindb_y.Name = "numericUpDown_LinFindb_y";
             this.numericUpDown_LinFindb_y.Size = new System.Drawing.Size(120, 39);
-            this.numericUpDown_LinFindb_y.TabIndex = 3;
+            this.numericUpDown_LinFindb_y.TabIndex = 16;
             // 
             // label16
             // 
@@ -658,7 +658,7 @@
             -2147483648});
             this.numericUpDown_LinFindb_a.Name = "numericUpDown_LinFindb_a";
             this.numericUpDown_LinFindb_a.Size = new System.Drawing.Size(120, 39);
-            this.numericUpDown_LinFindb_a.TabIndex = 3;
+            this.numericUpDown_LinFindb_a.TabIndex = 18;
             // 
             // Graf
             // 
