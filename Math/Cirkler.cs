@@ -10,9 +10,18 @@ namespace Math
 {
     public partial class Cirkler : UserControl
     {
+        public static float Vinkel;
+        public static float radius;
         public Cirkler()
         {
             InitializeComponent();
+        }
+
+        public void SetVinkelRadius()
+        {
+            radius = Convert.ToSingle(numericUpDown_radiusCirkelafsnit.Value);
+            Vinkel = Convert.ToSingle(numericUpDown_VCirkelafsnit.Value);
+            Vinkel = Vinkel * MathF.PI / 180;
         }
 
         private void Cirkel_Omkreds_Click(object sender, EventArgs e)
@@ -66,6 +75,56 @@ namespace Math
             string svar;
             A = (V / 360) * MathF.PI * d;
             svar = A.ToString();
+
+            Size size = TextRenderer.MeasureText(svar, textBox_CirkelbueLængde.Font);
+            textBox_CirkelbueLængde.Width = size.Width;
+            textBox_CirkelbueLængde.Height = size.Height;
+            textBox_CirkelbueLængde.Text = svar;
+        }
+
+        private void Areal_Cirkelafsnit_Click(object sender, EventArgs e)
+        {
+            SetVinkelRadius();
+            float A;
+            float B;
+            float C;
+            string svar;
+            float half = Convert.ToSingle(2 / (double)4);
+
+            A = half*(radius*radius);
+            B = Vinkel - MathF.Sin(Vinkel);
+            C = A * B;
+            svar = C.ToString();
+
+            Size size = TextRenderer.MeasureText(svar, textBox_ArealCirkelafsnit.Font);
+            textBox_ArealCirkelafsnit.Width = size.Width;
+            textBox_ArealCirkelafsnit.Height = size.Height;
+            textBox_ArealCirkelafsnit.Text = svar;
+        }
+
+        private void Korde_Cirkelafsnit_Click(object sender, EventArgs e)
+        {
+            SetVinkelRadius();
+            float K;
+            string svar;
+
+            K = 2*radius*MathF.Sin(Vinkel/2);
+            svar = K.ToString();
+
+            Size size = TextRenderer.MeasureText(svar, textBox_Korde.Font);
+            textBox_Korde.Width = size.Width;
+            textBox_Korde.Height = size.Height;
+            textBox_Korde.Text = svar;
+        }
+
+        private void Buelængde_Click(object sender, EventArgs e)
+        {
+            SetVinkelRadius();
+            float s;
+            string svar;
+
+            s = radius * Vinkel;
+            svar = s.ToString();
 
             Size size = TextRenderer.MeasureText(svar, textBox_CirkelbueLængde.Font);
             textBox_CirkelbueLængde.Width = size.Width;
