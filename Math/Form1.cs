@@ -12,8 +12,8 @@ namespace Math
 
         public void CloseUC(Control UC)
         {
-            Clear.NumericUpDowns(this);
-            Clear.ClearTextBox(this);
+            EventArgs e = null;
+            Slet_Click(this, e);
             this.Hide();
             MainMenu.mm.Show();
             UC.Hide();
@@ -42,9 +42,17 @@ namespace Math
                 case "Cirkler":
                     CloseUC(MainMenu.c);
                     break;
+
+                case "Firkanter":
+                    CloseUC(MainMenu.fi);
+                    break;
+
+                case "Analytisk plangeometri":
+                    CloseUC(MainMenu.ap);
+                    break;
             }
 
-
+            
         }
 
         private void Slet_Click(object sender, EventArgs e)

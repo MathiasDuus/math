@@ -33,6 +33,8 @@
             this.GoToTrigonometriVil = new System.Windows.Forms.Button();
             this.Formler = new System.Windows.Forms.Button();
             this.Cirkler = new System.Windows.Forms.Button();
+            this.Firkanter = new System.Windows.Forms.Button();
+            this.GoTo_AP = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // GoToPythagoras
@@ -85,11 +87,33 @@
             this.Cirkler.UseVisualStyleBackColor = true;
             this.Cirkler.Click += new System.EventHandler(this.Cirkler_Click);
             // 
+            // Firkanter
+            // 
+            this.Firkanter.Location = new System.Drawing.Point(342, 66);
+            this.Firkanter.Name = "Firkanter";
+            this.Firkanter.Size = new System.Drawing.Size(159, 48);
+            this.Firkanter.TabIndex = 4;
+            this.Firkanter.Text = "Firkanter";
+            this.Firkanter.UseVisualStyleBackColor = true;
+            this.Firkanter.Click += new System.EventHandler(this.Firkanter_Click);
+            // 
+            // GoTo_AP
+            // 
+            this.GoTo_AP.Location = new System.Drawing.Point(507, 66);
+            this.GoTo_AP.Name = "GoTo_AP";
+            this.GoTo_AP.Size = new System.Drawing.Size(268, 48);
+            this.GoTo_AP.TabIndex = 5;
+            this.GoTo_AP.Text = "Analytisk plangeometri";
+            this.GoTo_AP.UseVisualStyleBackColor = true;
+            this.GoTo_AP.Click += new System.EventHandler(this.GoTo_AP_Click);
+            // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(962, 668);
+            this.ClientSize = new System.Drawing.Size(788, 179);
+            this.Controls.Add(this.GoTo_AP);
+            this.Controls.Add(this.Firkanter);
             this.Controls.Add(this.Cirkler);
             this.Controls.Add(this.Formler);
             this.Controls.Add(this.GoToTrigonometriVil);
@@ -110,5 +134,7 @@
         private System.Windows.Forms.Button GoToTrigonometriVil;
         private System.Windows.Forms.Button Formler;
         private System.Windows.Forms.Button Cirkler;
+        private System.Windows.Forms.Button Firkanter;
+        private System.Windows.Forms.Button GoTo_AP;
     }
 }

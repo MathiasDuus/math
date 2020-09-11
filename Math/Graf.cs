@@ -36,7 +36,7 @@ namespace Math
                     //Denne gang med minus
                     x = ((-b) - MathF.Sqrt(D)) / (2 * a);
                     // Tilføjer resultatet til den samme string som før
-                    svar += ", " + x.ToString();
+                    svar += "; " + x.ToString();
                 }
 
                 Size size = TextRenderer.MeasureText(svar, textBox_AndFindX.Font);
@@ -44,9 +44,9 @@ namespace Math
                 textBox_AndFindX.Height = size.Height;
                 textBox_AndFindX.Text = svar;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                MessageBox.Show(ups);
+                MessageBox.Show(ex.ToString());
             }
         }
 
@@ -72,9 +72,9 @@ namespace Math
                 //tilføjer svar til textboxen
                 textBox_AndFindD.Text = svar;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                MessageBox.Show(ups);
+                MessageBox.Show(ex.ToString());
             }
         }
 
@@ -102,9 +102,9 @@ namespace Math
                 //tilføjer svar til textboxen
                 textBox_LinFinda.Text = svar;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                MessageBox.Show(ups);
+                MessageBox.Show(ex.ToString());
             }
         }
 
@@ -131,9 +131,9 @@ namespace Math
                 //tilføjer svar til textboxen
                 textBox_LindFindb.Text = svar;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                MessageBox.Show(ups);
+                MessageBox.Show(ex.ToString());
             }
         }
     }

@@ -12,6 +12,8 @@ namespace Math
         public static TrigonometriVil tv = new TrigonometriVil();
         public static Graf g = new Graf();
         public static Cirkler c = new Cirkler();
+        public static Firkanter fi = new Firkanter();
+        public static AnalytiskPlangeometri ap = new AnalytiskPlangeometri();
 
         public MainMenu()
         {
@@ -56,6 +58,16 @@ namespace Math
         private void Cirkler_Click(object sender, EventArgs e)
         {
             OpenUC(c);
+        }
+
+        private void Firkanter_Click(object sender, EventArgs e)
+        {
+            OpenUC(fi);
+        }
+
+        private void GoTo_AP_Click(object sender, EventArgs e)
+        {
+            OpenUC(ap);
         }
     }
 }

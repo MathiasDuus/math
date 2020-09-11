@@ -71,12 +71,12 @@
             this.label16 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox_Buelængde = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.numericUpDown7 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown8 = new System.Windows.Forms.NumericUpDown();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.numericUpDown_korde = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown_buelængde = new System.Windows.Forms.NumericUpDown();
+            this.textBox_CirkelafsnitOmkreds = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label24 = new System.Windows.Forms.Label();
@@ -87,12 +87,12 @@
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -107,8 +107,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_radiusCirkelafsnit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_korde)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_buelængde)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_VCirkelafsnit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -124,7 +124,7 @@
             this.Cirkel_Omkreds.Location = new System.Drawing.Point(8, 124);
             this.Cirkel_Omkreds.Name = "Cirkel_Omkreds";
             this.Cirkel_Omkreds.Size = new System.Drawing.Size(166, 44);
-            this.Cirkel_Omkreds.TabIndex = 0;
+            this.Cirkel_Omkreds.TabIndex = 1;
             this.Cirkel_Omkreds.Text = "Omkreds";
             this.Cirkel_Omkreds.UseVisualStyleBackColor = true;
             this.Cirkel_Omkreds.Click += new System.EventHandler(this.Cirkel_Omkreds_Click);
@@ -135,7 +135,7 @@
             this.Cirkel_Areal.Location = new System.Drawing.Point(8, 228);
             this.Cirkel_Areal.Name = "Cirkel_Areal";
             this.Cirkel_Areal.Size = new System.Drawing.Size(166, 43);
-            this.Cirkel_Areal.TabIndex = 0;
+            this.Cirkel_Areal.TabIndex = 4;
             this.Cirkel_Areal.Text = "Areal";
             this.Cirkel_Areal.UseVisualStyleBackColor = true;
             this.Cirkel_Areal.Click += new System.EventHandler(this.Cirkel_Areal_Click);
@@ -146,7 +146,7 @@
             this.Cirkeludsnit_Areal.Location = new System.Drawing.Point(41, 106);
             this.Cirkeludsnit_Areal.Name = "Cirkeludsnit_Areal";
             this.Cirkeludsnit_Areal.Size = new System.Drawing.Size(166, 43);
-            this.Cirkeludsnit_Areal.TabIndex = 0;
+            this.Cirkeludsnit_Areal.TabIndex = 8;
             this.Cirkeludsnit_Areal.Text = "Areal";
             this.Cirkeludsnit_Areal.UseVisualStyleBackColor = true;
             this.Cirkeludsnit_Areal.Click += new System.EventHandler(this.Cirkeludsnit_Areal_Click);
@@ -157,7 +157,7 @@
             this.Cirkelbue.Location = new System.Drawing.Point(41, 216);
             this.Cirkelbue.Name = "Cirkelbue";
             this.Cirkelbue.Size = new System.Drawing.Size(166, 43);
-            this.Cirkelbue.TabIndex = 0;
+            this.Cirkelbue.TabIndex = 12;
             this.Cirkelbue.Text = "Cirkelbue";
             this.Cirkelbue.UseVisualStyleBackColor = true;
             this.Cirkelbue.Click += new System.EventHandler(this.Cirkelbue_Click);
@@ -168,7 +168,7 @@
             this.Areal_Cirkelafsnit.Location = new System.Drawing.Point(8, 89);
             this.Areal_Cirkelafsnit.Name = "Areal_Cirkelafsnit";
             this.Areal_Cirkelafsnit.Size = new System.Drawing.Size(166, 43);
-            this.Areal_Cirkelafsnit.TabIndex = 0;
+            this.Areal_Cirkelafsnit.TabIndex = 16;
             this.Areal_Cirkelafsnit.Text = "Areal";
             this.Areal_Cirkelafsnit.UseVisualStyleBackColor = true;
             this.Areal_Cirkelafsnit.Click += new System.EventHandler(this.Areal_Cirkelafsnit_Click);
@@ -179,7 +179,7 @@
             this.Korde_Cirkelafsnit.Location = new System.Drawing.Point(8, 208);
             this.Korde_Cirkelafsnit.Name = "Korde_Cirkelafsnit";
             this.Korde_Cirkelafsnit.Size = new System.Drawing.Size(166, 43);
-            this.Korde_Cirkelafsnit.TabIndex = 0;
+            this.Korde_Cirkelafsnit.TabIndex = 17;
             this.Korde_Cirkelafsnit.Text = "Korde";
             this.Korde_Cirkelafsnit.UseVisualStyleBackColor = true;
             this.Korde_Cirkelafsnit.Click += new System.EventHandler(this.Korde_Cirkelafsnit_Click);
@@ -190,7 +190,7 @@
             this.Buelængde.Location = new System.Drawing.Point(8, 328);
             this.Buelængde.Name = "Buelængde";
             this.Buelængde.Size = new System.Drawing.Size(166, 43);
-            this.Buelængde.TabIndex = 0;
+            this.Buelængde.TabIndex = 18;
             this.Buelængde.Text = "Buelængde";
             this.Buelængde.UseVisualStyleBackColor = true;
             this.Buelængde.Click += new System.EventHandler(this.Buelængde_Click);
@@ -244,7 +244,7 @@
             0});
             this.numericUpDown_dOmkreds.Name = "numericUpDown_dOmkreds";
             this.numericUpDown_dOmkreds.Size = new System.Drawing.Size(120, 39);
-            this.numericUpDown_dOmkreds.TabIndex = 3;
+            this.numericUpDown_dOmkreds.TabIndex = 0;
             // 
             // label2
             // 
@@ -268,7 +268,7 @@
             0});
             this.numericUpDown_rCirkeludsnit.Name = "numericUpDown_rCirkeludsnit";
             this.numericUpDown_rCirkeludsnit.Size = new System.Drawing.Size(120, 39);
-            this.numericUpDown_rCirkeludsnit.TabIndex = 3;
+            this.numericUpDown_rCirkeludsnit.TabIndex = 7;
             // 
             // label3
             // 
@@ -292,7 +292,7 @@
             0});
             this.numericUpDown_VCirkeludsnitAreal.Name = "numericUpDown_VCirkeludsnitAreal";
             this.numericUpDown_VCirkeludsnitAreal.Size = new System.Drawing.Size(120, 39);
-            this.numericUpDown_VCirkeludsnitAreal.TabIndex = 3;
+            this.numericUpDown_VCirkeludsnitAreal.TabIndex = 6;
             // 
             // label4
             // 
@@ -335,7 +335,7 @@
             this.TextBox_Omkreds.Name = "TextBox_Omkreds";
             this.TextBox_Omkreds.ReadOnly = true;
             this.TextBox_Omkreds.Size = new System.Drawing.Size(100, 39);
-            this.TextBox_Omkreds.TabIndex = 4;
+            this.TextBox_Omkreds.TabIndex = 2;
             // 
             // label6
             // 
@@ -354,7 +354,7 @@
             this.textBox_CirkeludsnitAreal.Name = "textBox_CirkeludsnitAreal";
             this.textBox_CirkeludsnitAreal.ReadOnly = true;
             this.textBox_CirkeludsnitAreal.Size = new System.Drawing.Size(100, 39);
-            this.textBox_CirkeludsnitAreal.TabIndex = 4;
+            this.textBox_CirkeludsnitAreal.TabIndex = 9;
             // 
             // label7
             // 
@@ -373,7 +373,7 @@
             this.textBox_ArealCirkel.Name = "textBox_ArealCirkel";
             this.textBox_ArealCirkel.ReadOnly = true;
             this.textBox_ArealCirkel.Size = new System.Drawing.Size(100, 39);
-            this.textBox_ArealCirkel.TabIndex = 4;
+            this.textBox_ArealCirkel.TabIndex = 5;
             // 
             // label8
             // 
@@ -402,7 +402,7 @@
             this.textBox_CirkelbueLængde.Name = "textBox_CirkelbueLængde";
             this.textBox_CirkelbueLængde.ReadOnly = true;
             this.textBox_CirkelbueLængde.Size = new System.Drawing.Size(100, 39);
-            this.textBox_CirkelbueLængde.TabIndex = 4;
+            this.textBox_CirkelbueLængde.TabIndex = 13;
             // 
             // label10
             // 
@@ -426,7 +426,7 @@
             0});
             this.numericUpDown_VCirkelbue.Name = "numericUpDown_VCirkelbue";
             this.numericUpDown_VCirkelbue.Size = new System.Drawing.Size(120, 39);
-            this.numericUpDown_VCirkelbue.TabIndex = 3;
+            this.numericUpDown_VCirkelbue.TabIndex = 10;
             // 
             // label11
             // 
@@ -450,7 +450,7 @@
             0});
             this.numericUpDown_dCirkelbue.Name = "numericUpDown_dCirkelbue";
             this.numericUpDown_dCirkelbue.Size = new System.Drawing.Size(120, 39);
-            this.numericUpDown_dCirkelbue.TabIndex = 3;
+            this.numericUpDown_dCirkelbue.TabIndex = 11;
             // 
             // label12
             // 
@@ -487,7 +487,7 @@
             this.textBox_Korde.Name = "textBox_Korde";
             this.textBox_Korde.ReadOnly = true;
             this.textBox_Korde.Size = new System.Drawing.Size(100, 39);
-            this.textBox_Korde.TabIndex = 4;
+            this.textBox_Korde.TabIndex = 23;
             // 
             // label13
             // 
@@ -506,7 +506,7 @@
             this.textBox_ArealCirkelafsnit.Name = "textBox_ArealCirkelafsnit";
             this.textBox_ArealCirkelafsnit.ReadOnly = true;
             this.textBox_ArealCirkelafsnit.Size = new System.Drawing.Size(100, 39);
-            this.textBox_ArealCirkelafsnit.TabIndex = 4;
+            this.textBox_ArealCirkelafsnit.TabIndex = 22;
             // 
             // label14
             // 
@@ -530,7 +530,7 @@
             0});
             this.numericUpDown_radiusCirkelafsnit.Name = "numericUpDown_radiusCirkelafsnit";
             this.numericUpDown_radiusCirkelafsnit.Size = new System.Drawing.Size(120, 39);
-            this.numericUpDown_radiusCirkelafsnit.TabIndex = 3;
+            this.numericUpDown_radiusCirkelafsnit.TabIndex = 15;
             // 
             // label16
             // 
@@ -561,14 +561,14 @@
             this.label17.TabIndex = 2;
             this.label17.Text = "K = ";
             // 
-            // textBox3
+            // textBox_Buelængde
             // 
-            this.textBox3.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.Location = new System.Drawing.Point(249, 378);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(100, 39);
-            this.textBox3.TabIndex = 4;
+            this.textBox_Buelængde.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox_Buelængde.Location = new System.Drawing.Point(249, 378);
+            this.textBox_Buelængde.Name = "textBox_Buelængde";
+            this.textBox_Buelængde.ReadOnly = true;
+            this.textBox_Buelængde.Size = new System.Drawing.Size(100, 39);
+            this.textBox_Buelængde.TabIndex = 24;
             // 
             // label21
             // 
@@ -589,42 +589,42 @@
             this.pictureBox7.TabIndex = 1;
             this.pictureBox7.TabStop = false;
             // 
-            // numericUpDown7
+            // numericUpDown_korde
             // 
-            this.numericUpDown7.DecimalPlaces = 3;
-            this.numericUpDown7.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.numericUpDown7.Location = new System.Drawing.Point(584, 452);
-            this.numericUpDown7.Maximum = new decimal(new int[] {
+            this.numericUpDown_korde.DecimalPlaces = 3;
+            this.numericUpDown_korde.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.numericUpDown_korde.Location = new System.Drawing.Point(584, 452);
+            this.numericUpDown_korde.Maximum = new decimal(new int[] {
             100000000,
             0,
             0,
             0});
-            this.numericUpDown7.Name = "numericUpDown7";
-            this.numericUpDown7.Size = new System.Drawing.Size(120, 39);
-            this.numericUpDown7.TabIndex = 3;
+            this.numericUpDown_korde.Name = "numericUpDown_korde";
+            this.numericUpDown_korde.Size = new System.Drawing.Size(120, 39);
+            this.numericUpDown_korde.TabIndex = 20;
             // 
-            // numericUpDown8
+            // numericUpDown_buelængde
             // 
-            this.numericUpDown8.DecimalPlaces = 3;
-            this.numericUpDown8.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.numericUpDown8.Location = new System.Drawing.Point(408, 452);
-            this.numericUpDown8.Maximum = new decimal(new int[] {
+            this.numericUpDown_buelængde.DecimalPlaces = 3;
+            this.numericUpDown_buelængde.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.numericUpDown_buelængde.Location = new System.Drawing.Point(408, 452);
+            this.numericUpDown_buelængde.Maximum = new decimal(new int[] {
             100000000,
             0,
             0,
             0});
-            this.numericUpDown8.Name = "numericUpDown8";
-            this.numericUpDown8.Size = new System.Drawing.Size(120, 39);
-            this.numericUpDown8.TabIndex = 3;
+            this.numericUpDown_buelængde.Name = "numericUpDown_buelængde";
+            this.numericUpDown_buelængde.Size = new System.Drawing.Size(120, 39);
+            this.numericUpDown_buelængde.TabIndex = 19;
             // 
-            // textBox4
+            // textBox_CirkelafsnitOmkreds
             // 
-            this.textBox4.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox4.Location = new System.Drawing.Point(249, 499);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(100, 39);
-            this.textBox4.TabIndex = 4;
+            this.textBox_CirkelafsnitOmkreds.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox_CirkelafsnitOmkreds.Location = new System.Drawing.Point(249, 499);
+            this.textBox_CirkelafsnitOmkreds.Name = "textBox_CirkelafsnitOmkreds";
+            this.textBox_CirkelafsnitOmkreds.ReadOnly = true;
+            this.textBox_CirkelafsnitOmkreds.Size = new System.Drawing.Size(100, 39);
+            this.textBox_CirkelafsnitOmkreds.TabIndex = 25;
             // 
             // label23
             // 
@@ -671,9 +671,10 @@
             this.Omkreds_Cirkelafsnit.Location = new System.Drawing.Point(8, 449);
             this.Omkreds_Cirkelafsnit.Name = "Omkreds_Cirkelafsnit";
             this.Omkreds_Cirkelafsnit.Size = new System.Drawing.Size(166, 43);
-            this.Omkreds_Cirkelafsnit.TabIndex = 0;
+            this.Omkreds_Cirkelafsnit.TabIndex = 20;
             this.Omkreds_Cirkelafsnit.Text = "Omkreds";
             this.Omkreds_Cirkelafsnit.UseVisualStyleBackColor = true;
+            this.Omkreds_Cirkelafsnit.Click += new System.EventHandler(this.Omkreds_Cirkelafsnit_Click);
             // 
             // label19
             // 
@@ -697,7 +698,7 @@
             0});
             this.numericUpDown_VCirkelafsnit.Name = "numericUpDown_VCirkelafsnit";
             this.numericUpDown_VCirkelafsnit.Size = new System.Drawing.Size(120, 39);
-            this.numericUpDown_VCirkelafsnit.TabIndex = 3;
+            this.numericUpDown_VCirkelafsnit.TabIndex = 14;
             // 
             // pictureBox9
             // 
@@ -737,7 +738,7 @@
             this.groupBox2.Controls.Add(this.label20);
             this.groupBox2.Controls.Add(this.label18);
             this.groupBox2.Controls.Add(this.label15);
-            this.groupBox2.Controls.Add(this.numericUpDown7);
+            this.groupBox2.Controls.Add(this.numericUpDown_korde);
             this.groupBox2.Controls.Add(this.textBox_Korde);
             this.groupBox2.Controls.Add(this.textBox_ArealCirkelafsnit);
             this.groupBox2.Controls.Add(this.label13);
@@ -746,7 +747,7 @@
             this.groupBox2.Controls.Add(this.Areal_Cirkelafsnit);
             this.groupBox2.Controls.Add(this.label19);
             this.groupBox2.Controls.Add(this.Korde_Cirkelafsnit);
-            this.groupBox2.Controls.Add(this.textBox4);
+            this.groupBox2.Controls.Add(this.textBox_CirkelafsnitOmkreds);
             this.groupBox2.Controls.Add(this.Buelængde);
             this.groupBox2.Controls.Add(this.pictureBox5);
             this.groupBox2.Controls.Add(this.Omkreds_Cirkelafsnit);
@@ -755,9 +756,9 @@
             this.groupBox2.Controls.Add(this.label16);
             this.groupBox2.Controls.Add(this.pictureBox8);
             this.groupBox2.Controls.Add(this.pictureBox6);
-            this.groupBox2.Controls.Add(this.numericUpDown8);
+            this.groupBox2.Controls.Add(this.numericUpDown_buelængde);
             this.groupBox2.Controls.Add(this.label17);
-            this.groupBox2.Controls.Add(this.textBox3);
+            this.groupBox2.Controls.Add(this.textBox_Buelængde);
             this.groupBox2.Controls.Add(this.numericUpDown_radiusCirkelafsnit);
             this.groupBox2.Controls.Add(this.pictureBox7);
             this.groupBox2.Controls.Add(this.label21);
@@ -767,6 +768,46 @@
             this.groupBox2.Size = new System.Drawing.Size(795, 574);
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label22.Location = new System.Drawing.Point(464, 278);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(96, 32);
+            this.label22.TabIndex = 5;
+            this.label22.Text = "i grader";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label20.Location = new System.Drawing.Point(464, 246);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(308, 32);
+            this.label20.TabIndex = 5;
+            this.label20.Text = "I input feltet skrives vinklen";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label18.Location = new System.Drawing.Point(464, 214);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(315, 32);
+            this.label18.TabIndex = 5;
+            this.label18.Text = "bruger radianer i udregning.";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label15.Location = new System.Drawing.Point(464, 182);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(331, 32);
+            this.label15.TabIndex = 5;
+            this.label15.Text = "Alle formlerne for cirkelafsnit ";
             // 
             // groupBox3
             // 
@@ -804,46 +845,6 @@
             this.groupBox4.TabIndex = 7;
             this.groupBox4.TabStop = false;
             // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label15.Location = new System.Drawing.Point(464, 182);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(331, 32);
-            this.label15.TabIndex = 5;
-            this.label15.Text = "Alle formlerne for cirkelafsnit ";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label18.Location = new System.Drawing.Point(464, 214);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(315, 32);
-            this.label18.TabIndex = 5;
-            this.label18.Text = "bruger radianer i udregning.";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label20.Location = new System.Drawing.Point(464, 246);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(308, 32);
-            this.label20.TabIndex = 5;
-            this.label20.Text = "I input feltet skrives vinklen";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label22.Location = new System.Drawing.Point(464, 278);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(96, 32);
-            this.label22.TabIndex = 5;
-            this.label22.Text = "i grader";
-            // 
             // Cirkler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -869,8 +870,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_radiusCirkelafsnit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_korde)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_buelængde)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_VCirkelafsnit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
@@ -929,12 +930,12 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox_Buelængde;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.NumericUpDown numericUpDown7;
-        private System.Windows.Forms.NumericUpDown numericUpDown8;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.NumericUpDown numericUpDown_korde;
+        private System.Windows.Forms.NumericUpDown numericUpDown_buelængde;
+        private System.Windows.Forms.TextBox textBox_CirkelafsnitOmkreds;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Label label24;
