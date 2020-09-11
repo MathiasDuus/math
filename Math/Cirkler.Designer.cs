@@ -766,7 +766,7 @@
             this.groupBox2.Location = new System.Drawing.Point(0, 324);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(795, 574);
-            this.groupBox2.TabIndex = 5;
+            this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
             // 
             // label22
@@ -816,7 +816,7 @@
             this.groupBox3.Location = new System.Drawing.Point(801, 324);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(548, 593);
-            this.groupBox3.TabIndex = 6;
+            this.groupBox3.TabIndex = 8;
             this.groupBox3.TabStop = false;
             // 
             // groupBox4
@@ -842,7 +842,7 @@
             this.groupBox4.Location = new System.Drawing.Point(550, -15);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(799, 333);
-            this.groupBox4.TabIndex = 7;
+            this.groupBox4.TabIndex = 6;
             this.groupBox4.TabStop = false;
             // 
             // Cirkler

@@ -82,7 +82,7 @@
             this.Cirkler.Location = new System.Drawing.Point(177, 66);
             this.Cirkler.Name = "Cirkler";
             this.Cirkler.Size = new System.Drawing.Size(159, 48);
-            this.Cirkler.TabIndex = 3;
+            this.Cirkler.TabIndex = 4;
             this.Cirkler.Text = "Cirkler";
             this.Cirkler.UseVisualStyleBackColor = true;
             this.Cirkler.Click += new System.EventHandler(this.Cirkler_Click);
@@ -92,7 +92,7 @@
             this.Firkanter.Location = new System.Drawing.Point(342, 66);
             this.Firkanter.Name = "Firkanter";
             this.Firkanter.Size = new System.Drawing.Size(159, 48);
-            this.Firkanter.TabIndex = 4;
+            this.Firkanter.TabIndex = 5;
             this.Firkanter.Text = "Firkanter";
             this.Firkanter.UseVisualStyleBackColor = true;
             this.Firkanter.Click += new System.EventHandler(this.Firkanter_Click);
@@ -102,7 +102,7 @@
             this.GoTo_AP.Location = new System.Drawing.Point(507, 66);
             this.GoTo_AP.Name = "GoTo_AP";
             this.GoTo_AP.Size = new System.Drawing.Size(268, 48);
-            this.GoTo_AP.TabIndex = 5;
+            this.GoTo_AP.TabIndex = 6;
             this.GoTo_AP.Text = "Analytisk plangeometri";
             this.GoTo_AP.UseVisualStyleBackColor = true;
             this.GoTo_AP.Click += new System.EventHandler(this.GoTo_AP_Click);
