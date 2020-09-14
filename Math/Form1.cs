@@ -10,15 +10,6 @@ namespace Math
             InitializeComponent();
         }
 
-        public void CloseUC(Control UC)
-        {
-            EventArgs e = null;
-            Slet_Click(this, e);
-            this.Hide();
-            MainMenu.mm.Show();
-            UC.Hide();
-        }
-
         private void back_button_Click(object sender, EventArgs e)
         {
             switch (this.Text)
@@ -47,7 +38,7 @@ namespace Math
                     CloseUC(MainMenu.fi);
                     break;
 
-                case "Analytisk plangeometri":
+                case "AnalytiskPlangeometri":
                     CloseUC(MainMenu.ap);
                     break;
             }
@@ -59,6 +50,15 @@ namespace Math
         {
             Clear.NumericUpDowns(this);
             Clear.ClearTextBox(this);
+        }
+
+        public void CloseUC(Control UC)
+        {
+            EventArgs e = null;
+            Slet_Click(this, e);
+            this.Hide();
+            MainMenu.mm.Show();
+            UC.Hide();
         }
     }
 }
