@@ -111,7 +111,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(788, 179);
+            this.ClientSize = new System.Drawing.Size(788, 135);
             this.Controls.Add(this.GoTo_AP);
             this.Controls.Add(this.Firkanter);
             this.Controls.Add(this.Cirkler);

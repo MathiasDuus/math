@@ -46,6 +46,5 @@ namespace Math
 
             return Convert.ToDecimal(svar);
         }
-
     }
 }
