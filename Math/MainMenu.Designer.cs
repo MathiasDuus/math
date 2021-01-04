@@ -35,6 +35,7 @@
             this.Cirkler = new System.Windows.Forms.Button();
             this.Firkanter = new System.Windows.Forms.Button();
             this.GoTo_AP = new System.Windows.Forms.Button();
+            this.button_Vektor = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // GoToPythagoras
@@ -107,11 +108,22 @@
             this.GoTo_AP.UseVisualStyleBackColor = true;
             this.GoTo_AP.Click += new System.EventHandler(this.GoTo_AP_Click);
             // 
+            // button_Vektor
+            // 
+            this.button_Vektor.Location = new System.Drawing.Point(12, 120);
+            this.button_Vektor.Name = "button_Vektor";
+            this.button_Vektor.Size = new System.Drawing.Size(159, 48);
+            this.button_Vektor.TabIndex = 7;
+            this.button_Vektor.Text = "Vektor";
+            this.button_Vektor.UseVisualStyleBackColor = true;
+            this.button_Vektor.Click += new System.EventHandler(this.button1_Click);
+            // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(788, 135);
+            this.ClientSize = new System.Drawing.Size(788, 224);
+            this.Controls.Add(this.button_Vektor);
             this.Controls.Add(this.GoTo_AP);
             this.Controls.Add(this.Firkanter);
             this.Controls.Add(this.Cirkler);
@@ -136,5 +148,6 @@
         private System.Windows.Forms.Button Cirkler;
         private System.Windows.Forms.Button Firkanter;
         private System.Windows.Forms.Button GoTo_AP;
+        private System.Windows.Forms.Button button_Vektor;
     }
 }

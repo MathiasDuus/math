@@ -14,6 +14,7 @@ namespace Math
         public static Cirkler c = new Cirkler();
         public static Firkanter fi = new Firkanter();
         public static AnalytiskPlangeometri ap = new AnalytiskPlangeometri();
+        public static Vektor v = new Vektor();
 
         public MainMenu()
         {
@@ -68,6 +69,11 @@ namespace Math
         private void GoTo_AP_Click(object sender, EventArgs e)
         {
             OpenUC(ap);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            OpenUC(v);
         }
     }
 }
