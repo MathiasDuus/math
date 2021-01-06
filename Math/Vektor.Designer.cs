@@ -78,6 +78,8 @@ namespace Math
             this.textBox_multiplikation2 = new System.Windows.Forms.TextBox();
             this.textBox_multiplikation1 = new System.Windows.Forms.TextBox();
             this.textBox_extend = new System.Windows.Forms.TextBox();
+            this.textBox_addtion2 = new System.Windows.Forms.TextBox();
+            this.textBox_subtraktion2 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_extend_Y)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_extend_X)).BeginInit();
@@ -325,12 +327,13 @@ namespace Math
             // 
             // button_addition
             // 
-            this.button_addition.Location = new System.Drawing.Point(16, 254);
+            this.button_addition.Location = new System.Drawing.Point(16, 260);
             this.button_addition.Name = "button_addition";
             this.button_addition.Size = new System.Drawing.Size(58, 44);
             this.button_addition.TabIndex = 7;
             this.button_addition.Text = "c =";
             this.button_addition.UseVisualStyleBackColor = true;
+            this.button_addition.Click += new System.EventHandler(this.button_addition_Click);
             // 
             // numericUpDown9
             // 
@@ -716,7 +719,7 @@ namespace Math
             // 
             // textBox_addition
             // 
-            this.textBox_addition.Location = new System.Drawing.Point(80, 257);
+            this.textBox_addition.Location = new System.Drawing.Point(89, 242);
             this.textBox_addition.Name = "textBox_addition";
             this.textBox_addition.ReadOnly = true;
             this.textBox_addition.Size = new System.Drawing.Size(100, 39);
@@ -725,7 +728,7 @@ namespace Math
             // 
             // textBox_subtraktion
             // 
-            this.textBox_subtraktion.Location = new System.Drawing.Point(80, 458);
+            this.textBox_subtraktion.Location = new System.Drawing.Point(80, 438);
             this.textBox_subtraktion.Name = "textBox_subtraktion";
             this.textBox_subtraktion.ReadOnly = true;
             this.textBox_subtraktion.Size = new System.Drawing.Size(100, 39);
@@ -759,10 +762,30 @@ namespace Math
             this.textBox_extend.TabIndex = 40;
             this.textBox_extend.TabStop = false;
             // 
+            // textBox_addtion2
+            // 
+            this.textBox_addtion2.Location = new System.Drawing.Point(89, 288);
+            this.textBox_addtion2.Name = "textBox_addtion2";
+            this.textBox_addtion2.ReadOnly = true;
+            this.textBox_addtion2.Size = new System.Drawing.Size(100, 39);
+            this.textBox_addtion2.TabIndex = 41;
+            this.textBox_addtion2.TabStop = false;
+            // 
+            // textBox_subtraktion2
+            // 
+            this.textBox_subtraktion2.Location = new System.Drawing.Point(80, 483);
+            this.textBox_subtraktion2.Name = "textBox_subtraktion2";
+            this.textBox_subtraktion2.ReadOnly = true;
+            this.textBox_subtraktion2.Size = new System.Drawing.Size(100, 39);
+            this.textBox_subtraktion2.TabIndex = 42;
+            this.textBox_subtraktion2.TabStop = false;
+            // 
             // Vektor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.textBox_subtraktion2);
+            this.Controls.Add(this.textBox_addtion2);
             this.Controls.Add(this.textBox_extend);
             this.Controls.Add(this.textBox_multiplikation1);
             this.Controls.Add(this.textBox_multiplikation2);
@@ -887,5 +910,7 @@ namespace Math
         private System.Windows.Forms.TextBox textBox_multiplikation2;
         private System.Windows.Forms.TextBox textBox_multiplikation1;
         private System.Windows.Forms.TextBox textBox_extend;
+        private System.Windows.Forms.TextBox textBox_addtion2;
+        private System.Windows.Forms.TextBox textBox_subtraktion2;
     }
 }
